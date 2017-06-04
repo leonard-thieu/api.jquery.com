@@ -7,10 +7,12 @@
     <signature>
       <added>1.0</added>
       <argument name="handlerIn" type="Function">
+        <argument name="this" type="Element" />
         <argument name="eventObject" type="Event" />
-        <desc>A function to execute when the mouse pointer enters the element.</desc>        
+        <desc>A function to execute when the mouse pointer enters the element.</desc>
       </argument>
       <argument name="handlerOut" type="Function">
+        <argument name="this" type="Element" />
         <argument name="eventObject" type="Event" />
         <desc>A function to execute when the mouse pointer leaves the element.</desc>        
       </argument>
