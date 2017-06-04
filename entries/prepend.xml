@@ -8,14 +8,20 @@
       <type name="htmlString"/>
       <type name="Element"/>
       <type name="Text"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Element"/>
+        <typeArgument name="Text"/>
+      </type>
       <type name="jQuery"/>
     </argument>
     <argument name="content" optional="true">
       <type name="htmlString"/>
       <type name="Element"/>
       <type name="Text"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Element"/>
+        <typeArgument name="Text"/>
+      </type>
       <type name="jQuery"/>
       <desc>One or more additional DOM elements, text nodes, arrays of elements and text nodes, HTML strings, or jQuery objects to insert at the beginning of each element in the set of matched elements.</desc>
     </argument>

@@ -11,7 +11,9 @@
     <added>1.7</added>
     <argument name="list" optional="true">
       <desc>An array or space-separated string naming the pieces of data to delete.</desc>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="String"/>
+      </type>
       <type name="String"/>
     </argument>
   </signature>

@@ -7,7 +7,9 @@
       <desc>A string containing a selector expression, a DOM element, or an array of elements to match against the set.</desc>
       <type name="Selector"/>
       <type name="Element"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Element"/>
+      </type>
     </argument>
   </signature>
   <signature>

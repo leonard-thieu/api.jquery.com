@@ -7,7 +7,9 @@
       <desc>A selector string, jQuery object, DOM element, or array of elements indicating which element(s) to replace.</desc>
       <type name="Selector"/>
       <type name="jQuery"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Element"/>
+      </type>
       <type name="Element"/>
     </argument>
   </signature>

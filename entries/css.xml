@@ -11,8 +11,11 @@
     </signature>
     <signature>
       <added>1.9</added>
-      <argument name="propertyNames" type="Array">
+      <argument name="propertyNames">
         <desc>An array of one or more CSS properties.</desc>
+        <type name="Array">
+          <typeArgument name="String"/>
+        </type>
       </argument>
     </signature>
     <desc>Get the computed style properties for the first element in the set of matched elements.</desc>

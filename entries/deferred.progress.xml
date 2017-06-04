@@ -5,14 +5,18 @@
     <added>1.7</added>
     <argument name="progressCallbacks">
       <type name="Function"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Function"/>
+      </type>
       <desc>
         A function, or array of functions, to be called when the Deferred generates progress notifications.
       </desc>
     </argument>
     <argument name="progressCallbacks" optional="true">
       <type name="Function"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Function"/>
+      </type>
       <desc>
         Optional additional functions, or arrays of functions, to be called when the Deferred generates progress notifications.
       </desc>

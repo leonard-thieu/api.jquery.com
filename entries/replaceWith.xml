@@ -7,7 +7,9 @@
       <desc>The content to insert. May be an HTML string, DOM element, array of DOM elements, or jQuery object.</desc>
       <type name="htmlString"/>
       <type name="Element"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Element"/>
+      </type>
       <type name="jQuery"/>
     </argument>
   </signature>

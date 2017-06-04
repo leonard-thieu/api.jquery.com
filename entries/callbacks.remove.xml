@@ -6,7 +6,9 @@
     <argument name="callbacks">
       <desc>A function, or array of functions, that are to be removed from the callback list.</desc>
       <type name="Function"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Function"/>
+      </type>
     </argument>
   </signature>
   <desc>Remove a callback or a collection of callbacks from a callback list.</desc>

@@ -8,7 +8,10 @@
       <type name="htmlString"/>
       <type name="Element"/>
       <type name="Text"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Element"/>
+        <typeArgument name="Text"/>
+      </type>
       <type name="jQuery"/>
     </argument>
     <argument name="content" optional="true">
@@ -16,7 +19,10 @@
       <type name="htmlString"/>
       <type name="Element"/>
       <type name="Text"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Element"/>
+        <typeArgument name="Text"/>
+      </type>
       <type name="jQuery"/>
     </argument>
   </signature>

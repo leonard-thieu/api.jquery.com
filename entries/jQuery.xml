@@ -22,7 +22,10 @@
     </signature>
     <signature>
       <added>1.0</added>
-      <argument name="elementArray" type="Array">
+      <argument name="elementArray">
+        <type name="Array">
+          <typeArgument name="Element"/>
+        </type>
         <desc>An array containing a set of DOM elements to wrap in a jQuery object.</desc>
       </argument>
     </signature>

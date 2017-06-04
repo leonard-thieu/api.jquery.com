@@ -162,8 +162,12 @@ $( document ).on( "click", function( event ) {
   <entry type="method" name="closest" return="Array" deprecated="1.7" removed="1.8">
     <signature>
       <added>1.4</added>
-      <argument name="selectors" type="Array">
+      <argument name="selectors">
         <desc>An array or string containing a selector expression to match elements against (can also be a jQuery object).</desc>
+        <type name="Array">
+          <typeArgument name="Element"/>
+          <typeArgument name="Text"/>
+        </type>
       </argument>
       <argument name="context" optional="true" type="Element">
         <desc>A DOM element within which a matching element may be found.</desc>

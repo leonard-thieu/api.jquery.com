@@ -8,7 +8,9 @@
       <type name="Selector"/>
       <type name="htmlString"/>
       <type name="Element"/>
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="Element"/>
+      </type>
       <type name="jQuery"/>
     </argument>
   </signature>
