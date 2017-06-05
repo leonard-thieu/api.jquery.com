@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<entries>
+  <entry type="method" name="jqXHR.done" return="jqXHR">
+    <desc>An alternative construct to the success callback option, refer to deferred.done() for implementation details.</desc>
+    <signature>
+      <added>1.0</added>
+      <argument name="doneCallback" type="Function">
+        <argument name="this" type="AjaxSettings"/>
+        <argument name="data" type="Anything"/>
+        <argument name="textStatus" type="String"/>
+        <argument name="jqXHR" type="jqXHR"/>
+      </argument>
+    </signature>
+  </entry>
+  <entry type="method" name="jqXHR.fail" return="jqXHR">
+    <desc>An alternative construct to the error callback option, the .fail() method replaces the deprecated .error() method. Refer to deferred.fail() for implementation details.</desc>
+    <signature>
+      <added>1.0</added>
+      <argument name="failCallback" type="Function">
+        <argument name="this" type="AjaxSettings"/>
+        <argument name="jqXHR" type="jqXHR"/>
+        <argument name="textStatus" type="String"/>
+        <argument name="errorThrown" type="Anything"/>
+      </argument>
+    </signature>
+  </entry>
+  <entry type="method" name="jqXHR.always" return="jqXHR">
+    <desc>
+      An alternative construct to the complete callback option, the .always() method replaces the deprecated .complete() method.
+      In response to a successful request, the function's arguments are the same as those of .done(): data, textStatus, and the jqXHR object. For failed requests the arguments are the same as those of .fail(): the jqXHR object, textStatus, and errorThrown. Refer to deferred.always() for implementation details.
+    </desc>
+    <signature>
+      <added>1.6</added>
+      <argument name="alwaysCallback" type="Function">
+        <argument name="this" type="AjaxSettings"/>
+        <argument name="data_jqXHR">
+          <type name="Anything"/>
+          <type name="jqXHR"/>
+        </argument>
+        <argument name="textStatus" type="String"/>
+        <argument name="jqXHR_errorThrown">
+          <type name="jqXHR"/>
+          <type name="Anything"/>
+        </argument>
+      </argument>
+    </signature>
+  </entry>
+  <entry type="method" name="jqXHR.then" return="jqXHR">
+    <desc>Incorporates the functionality of the .done() and .fail() methods, allowing (as of jQuery 1.8) the underlying Promise to be manipulated. Refer to deferred.then() for implementation details.</desc>
+    <signature>
+      <added>1.0</added>
+      <argument name="doneCallback" type="Function">
+        <argument name="this" type="AjaxSettings"/>
+        <argument name="data" type="Anything"/>
+        <argument name="textStatus" type="String"/>
+        <argument name="jqXHR" type="jqXHR"/>
+      </argument>
+      <argument name="failCallback" type="Function">
+        <argument name="this" type="AjaxSettings"/>
+        <argument name="jqXHR" type="jqXHR"/>
+        <argument name="textStatus" type="String"/>
+        <argument name="errorThrown" type="Anything"/>
+      </argument>
+    </signature>
+  </entry>
+</entries>
