@@ -4,7 +4,9 @@
   <signature>
     <added>1.2</added>
     <argument name="obj">
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="any"/>
+      </type>
       <type name="PlainObject"/>
       <type name="jQuery"/>
       <desc>An array, a plain object, or a jQuery object to serialize.</desc>
@@ -13,7 +15,9 @@
   <signature>
     <added>1.4</added>
     <argument name="obj">
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="any"/>
+      </type>
       <type name="PlainObject"/>
       <type name="jQuery"/>
       <desc>An array, a plain object, or a jQuery object to serialize.</desc>

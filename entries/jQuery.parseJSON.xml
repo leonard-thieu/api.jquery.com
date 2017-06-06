@@ -3,7 +3,11 @@
   <return type="String"/>
   <return type="Number"/>
   <return type="Object"/>
-  <return type="Array"/>
+  <return>
+    <type name="Array">
+      <typeArgument name="any"/>
+    </type>
+  </return>
   <return type="Boolean"/>
   <title>jQuery.parseJSON()</title>
   <signature>

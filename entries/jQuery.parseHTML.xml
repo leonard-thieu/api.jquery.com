@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.parseHTML" return="Array">
+<entry type="method" name="jQuery.parseHTML">
+  <return>
+    <type name="Array">
+      <typeArgument name="Node"/>
+    </type>
+  </return>
   <title>jQuery.parseHTML()</title>
   <desc>Parses a string into an array of DOM nodes.</desc>
   <signature>

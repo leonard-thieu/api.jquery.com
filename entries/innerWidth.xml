@@ -53,7 +53,8 @@ $( "p:last" ).text( "innerWidth:" + p.innerWidth() );
 <signature>
   <added>1.8.0</added>
   <argument name="function" type="Function">
-        <argument name="index" type="Integer" />
+    <argument name="this" type="Element" />
+    <argument name="index" type="Integer" />
         <argument name="width" type="Number" />
         <return>
           <type name="String"/>

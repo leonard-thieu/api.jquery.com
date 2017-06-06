@@ -8,7 +8,9 @@
       <desc>A string containing a JavaScript event type, such as <code>click</code> or <code>submit</code>.</desc>
     </argument>
     <argument name="extraParameters" optional="true">
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="any"/>
+      </type>
       <type name="PlainObject"/>
       <desc>Additional parameters to pass along to the event handler.</desc>
     </argument>
@@ -19,7 +21,9 @@
       <desc>A <a href="/category/events/event-object/"><code>jQuery.Event</code></a> object.</desc>
     </argument>
     <argument name="extraParameters" optional="true">
-      <type name="Array"/>
+      <type name="Array">
+        <typeArgument name="any"/>
+      </type>
       <type name="PlainObject"/>
       <desc>Additional parameters to pass along to the event handler.</desc>
     </argument>

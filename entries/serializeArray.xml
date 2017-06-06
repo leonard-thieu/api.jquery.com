@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
-<entry type="method" name="serializeArray" return="Array">
+<entry type="method" name="serializeArray">
+  <return>
+    <type name="Array">
+      <typeArgument name="any"/>
+    </type>
+  </return>
   <title>.serializeArray()</title>
   <signature>
     <added>1.2</added>

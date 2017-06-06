@@ -3,7 +3,10 @@
   <title>jQuery.each()</title>
   <signature>
     <added>1.0</added>
-    <argument name="array" type="Array">
+    <argument name="array">
+      <type name="Array">
+        <typeArgument name="any"/>
+      </type>
       <desc>The array to iterate over.</desc>
     </argument>
     <argument name="callback" type="Function">

@@ -66,7 +66,12 @@ $( "*", document.body ).click(function( event ) {
     <category slug="miscellaneous/dom-element-methods"/>
     <category slug="version/1.0"/>
   </entry>
-  <entry type="method" name="get" return="Array">
+  <entry type="method" name="get">
+    <return>
+      <type name="Array">
+        <typeArgument name="any"/>
+      </type>
+    </return>
     <title>.get()</title>
     <signature>
       <added>1.0</added>

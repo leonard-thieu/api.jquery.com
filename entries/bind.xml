@@ -11,6 +11,7 @@
     </argument>
     <argument name="handler" type="Function">
       <desc>A function to execute each time the event is triggered.</desc>
+      <argument name="this" type="Element" />
       <argument name="eventObject" type="Event" />
     </argument>
   </signature>

@@ -1,10 +1,18 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.grep" return="Array">
+<entry type="method" name="jQuery.grep">
+  <return>
+    <type name="Array">
+      <typeArgument name="any"/>
+    </type>
+  </return>
   <title>jQuery.grep()</title>
   <desc>Finds the elements of an array which satisfy a filter function. The original array is not affected.</desc>
   <signature>
     <added>1.0</added>
-    <argument name="array" type="ArrayLikeObject">
+    <argument name="array">
+      <type name="ArrayLikeObject">
+        <typeArgument name="Anything"/>
+      </type>
       <desc>The array-like object to search through.</desc>
     </argument>
     <argument name="function" type="Function">

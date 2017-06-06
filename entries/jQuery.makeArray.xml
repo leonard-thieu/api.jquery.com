@@ -1,9 +1,18 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.makeArray" return="Array">
+<entry type="method" name="jQuery.makeArray">
+  <return>
+    <type name="Array">
+      <typeArgument name="T"/>
+    </type>
+  </return>
   <title>jQuery.makeArray()</title>
   <signature>
     <added>1.2</added>
-    <argument name="obj" type="PlainObject">
+    <typeParameter name="T"/>
+    <argument name="obj">
+      <type name="ArrayLike">
+        <typeArgument name="T"/>
+      </type>
       <desc>Any object to turn into a native Array.</desc>
     </argument>
   </signature>

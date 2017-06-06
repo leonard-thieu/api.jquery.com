@@ -27,7 +27,10 @@
     <argument name="context" type="PlainObject">
       <desc>The object to which the context (<code>this</code>) of the function should be set.</desc>
     </argument>
-    <argument name="additionalArguments" type="Anything" optional="true">
+    <argument name="additionalArguments" optional="true" rest="true">
+      <type name="Array">
+        <typeArgument name="Anything"/>
+      </type>
       <desc>Any number of arguments to be passed to the function referenced in the <code>function</code> argument.</desc>
     </argument>
   </signature>
@@ -39,7 +42,10 @@
     <argument name="name" type="String">
       <desc>The name of the function whose context will be changed (should be a property of the <code>context</code> object).</desc>
     </argument>
-    <argument name="additionalArguments" type="Anything" optional="true">
+    <argument name="additionalArguments" optional="true" rest="true">
+      <type name="Array">
+        <typeArgument name="Anything"/>
+      </type>
       <desc>Any number of arguments to be passed to the function named in the <code>name</code> argument.</desc>
     </argument>
   </signature>

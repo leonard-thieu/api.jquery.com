@@ -3,10 +3,15 @@
   <title>jQuery.inArray()</title>
   <signature>
     <added>1.2</added>
-    <argument name="value" type="Anything">
+    <typeParameter name="T"/>
+    <argument name="value">
+      <typeArgument name="T"/>
       <desc>The value to search for.</desc>
     </argument>
-    <argument name="array" type="Array">
+    <argument name="array">
+      <type name="Array">
+        <typeArgument name="T"/>
+      </type>
       <desc>An array through which to search.</desc>
     </argument>
     <argument name="fromIndex" type="Number" optional="true">

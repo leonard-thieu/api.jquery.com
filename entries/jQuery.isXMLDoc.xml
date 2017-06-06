@@ -3,7 +3,7 @@
   <title>jQuery.isXMLDoc()</title>
   <signature>
     <added>1.1.4</added>
-    <argument name="node" type="Element">
+    <argument name="node" type="Node">
       <desc>The DOM node that will be checked to see if it's in an XML document.</desc>
     </argument>
   </signature>

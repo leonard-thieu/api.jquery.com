@@ -29,6 +29,7 @@
   <signature>
     <added>1.4</added>
     <argument name="function" type="Function">
+      <argument name="this" type="Element" />
       <argument name="index" type="Integer" />
       <return>
         <type name="htmlString"/>
@@ -43,6 +44,7 @@
    <signature>
     <added>1.10</added>
     <argument name="function-html" type="Function">
+      <argument name="this" type="Element" />
       <argument name="index" type="Integer" />
       <argument name="html" type="String" />
       <return>

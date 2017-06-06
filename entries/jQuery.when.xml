@@ -3,11 +3,13 @@
   <title>jQuery.when()</title>
   <signature>
     <added>1.5</added>
-    <argument name="deferreds">
+    <argument name="deferreds" rest="true">
       <desc>Zero or more Thenable objects.</desc>
-      <type name="Deferred"/>
-      <type name="Promise"/>
-      <type name="Thenable"/>
+      <type name="Array">
+        <typeArgument name="Deferred"/>
+        <typeArgument name="Promise"/>
+        <typeArgument name="Thenable"/>
+      </type>
     </argument>
   </signature>
   <desc>Provides a way to execute callback functions based on zero or more Thenable objects, usually <a href="/category/deferred-object/">Deferred</a> objects that represent asynchronous events.</desc>

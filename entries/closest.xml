@@ -159,7 +159,12 @@ $( document ).on( "click", function( event ) {
     <category slug="version/1.4"/>
     <category slug="version/1.6"/>
   </entry>
-  <entry type="method" name="closest" return="Array" deprecated="1.7" removed="1.8">
+  <entry type="method" name="closest" deprecated="1.7" removed="1.8">
+    <return>
+      <type name="Array">
+        <typeArgument name="any"/>
+      </type>
+    </return>
     <signature>
       <added>1.4</added>
       <argument name="selectors">

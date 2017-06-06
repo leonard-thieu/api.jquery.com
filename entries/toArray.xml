@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
-<entry type="method" name="toArray" return="Array">
+<entry type="method" name="toArray">
+  <return>
+    <type name="Array">
+      <typeArgument name="any"/>
+    </type>
+  </return>
   <title>.toArray()</title>
   <signature>
     <added>1.4</added>

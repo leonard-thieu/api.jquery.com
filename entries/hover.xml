@@ -88,6 +88,7 @@ $( "td" ).off( "mouseenter mouseleave" );
     <signature>
       <added>1.4</added>
       <argument name="handlerInOut" type="Function">
+        <argument name="this" type="Element" />
         <argument name="eventObject" type="Event" />
         <desc>A function to execute when the mouse pointer enters or leaves the element.</desc>        
       </argument>

@@ -15,7 +15,7 @@
       <argument name="eventObject" type="Event" />
     </argument>
   </signature>
-  <signature>
+  <signature>kon
     <added>1.7</added>
     <argument name="events" type="PlainObject">
       <desc>An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).</desc>

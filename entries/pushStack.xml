@@ -12,7 +12,7 @@
   </signature>
   <signature>
     <added>1.3</added>
-    <argument name="elements" type="Array">
+    <argument name="elements">
       <type name="Array">
         <typeArgument name="Element"/>
       </type>
@@ -21,7 +21,10 @@
     <argument name="name" type="String">
       <desc>The name of a jQuery method that generated the array of elements.</desc>
     </argument>
-    <argument name="arguments" type="Array">
+    <argument name="arguments">
+      <type name="Array">
+        <typeArgument name="any"/>
+      </type>
       <desc>The arguments that were passed in to the jQuery method (for serialization).</desc>
     </argument>
   </signature>
