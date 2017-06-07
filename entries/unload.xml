@@ -3,14 +3,14 @@
   <title>.unload()</title>
   <signature>
     <added>1.0</added>
-    <argument name="handler" type="Function">
+    <argument name="handler" type="Function" optional="true">
       <desc>A function to execute when the event is triggered.</desc>
       <argument name="eventObject" type="Event" />
     </argument>
   </signature>
   <signature>
     <added>1.4.3</added>
-    <argument name="eventData" type="Anything" optional="true">
+    <argument name="eventData" type="Anything">
       <desc>A plain object of data that will be passed to the event handler.</desc>
     </argument>
     <argument name="handler" type="Function">

@@ -7,16 +7,71 @@
     <argument name="events" type="String">
       <desc>One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</desc>
     </argument>
-    <argument name="selector" type="String" optional="true">
+    <argument name="selector">
+      <type name="String"/>
+      <type name="Null"/>
       <desc>A selector string to filter the descendants of the selected elements that trigger the event. If the selector is <code>null</code> or omitted, the event is always triggered when it reaches the selected element.</desc>
     </argument>
-    <argument name="data" type="Anything" optional="true">
+    <argument name="data" type="Anything">
       <desc>Data to be passed to the handler in <a href="/event.data/"><code>event.data</code></a> when an event is triggered.</desc>
     </argument>
-    <argument name="handler" type="Function">
+    <argument name="handler">
       <desc>A function to execute when the event is triggered. The value <code>false</code> is also allowed as a shorthand for a function that simply does <code>return false</code>.</desc>
-      <argument name="eventObject" type="Event" />
-      <argument name="extraParameter" type="Anything" optional="true" rest="true" />
+      <type name="Function">
+        <argument name="eventObject" type="Event" />
+        <argument name="extraParameter" type="Anything" optional="true" rest="true" />
+      </type>
+      <type name="false"/>
+    </argument>
+  </signature>
+  <signature>
+    <added>1.7</added>
+    <argument name="events" type="String">
+      <desc>One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</desc>
+    </argument>
+    <argument name="selector">
+      <type name="String"/>
+      <type name="Null"/>
+      <desc>A selector string to filter the descendants of the selected elements that trigger the event. If the selector is <code>null</code> or omitted, the event is always triggered when it reaches the selected element.</desc>
+    </argument>
+    <argument name="handler">
+      <desc>A function to execute when the event is triggered. The value <code>false</code> is also allowed as a shorthand for a function that simply does <code>return false</code>.</desc>
+      <type name="Function">
+        <argument name="eventObject" type="Event" />
+        <argument name="extraParameter" type="Anything" optional="true" rest="true" />
+      </type>
+      <type name="false"/>
+    </argument>
+  </signature>
+  <signature>
+    <added>1.7</added>
+    <argument name="events" type="String">
+      <desc>One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</desc>
+    </argument>
+    <argument name="data" type="Anything">
+      <desc>Data to be passed to the handler in <a href="/event.data/"><code>event.data</code></a> when an event is triggered.</desc>
+    </argument>
+    <argument name="handler">
+      <desc>A function to execute when the event is triggered. The value <code>false</code> is also allowed as a shorthand for a function that simply does <code>return false</code>.</desc>
+      <type name="Function">
+        <argument name="eventObject" type="Event" />
+        <argument name="extraParameter" type="Anything" optional="true" rest="true" />
+      </type>
+      <type name="false"/>
+    </argument>
+  </signature>
+  <signature>
+    <added>1.7</added>
+    <argument name="events" type="String">
+      <desc>One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".</desc>
+    </argument>
+    <argument name="handler">
+      <desc>A function to execute when the event is triggered. The value <code>false</code> is also allowed as a shorthand for a function that simply does <code>return false</code>.</desc>
+      <type name="Function">
+        <argument name="eventObject" type="Event" />
+        <argument name="extraParameter" type="Anything" optional="true" rest="true" />
+      </type>
+      <type name="false"/>
     </argument>
   </signature>
   <signature>

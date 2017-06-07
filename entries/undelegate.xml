@@ -4,42 +4,21 @@
   <desc>Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.</desc>
   <signature>
     <added>1.4.2</added>
-  </signature>
-  <signature>
-    <added>1.4.2</added>
-    <argument name="selector" type="String">
-      <desc>A selector which will be used to filter the event results.</desc>
-    </argument>
-    <argument name="eventType" type="String">
-      <desc>A string containing a JavaScript event type, such as "click" or "keydown"</desc>
-    </argument>
-  </signature>
-  <signature>
-    <added>1.4.2</added>
-    <argument name="selector" type="String">
-      <desc>A selector which will be used to filter the event results.</desc>
-    </argument>
-    <argument name="eventType" type="String">
-      <desc>A string containing a JavaScript event type, such as "click" or "keydown"</desc>
-    </argument>
-    <argument name="handler" type="Function">
-      <desc>A function to execute at the time the event is triggered.</desc>
-      <argument name="eventObject" type="Event" />
-    </argument>
-  </signature>
-  <signature>
     <added>1.4.3</added>
-    <argument name="selector" type="String">
+    <added>1.6</added>
+    <argument name="selector" type="String" optional="true">
       <desc>A selector which will be used to filter the event results.</desc>
+      <desc>A string containing a namespace to unbind all events from.</desc>
     </argument>
-    <argument name="events" type="PlainObject">
+    <argument name="eventType" optional="true">
+      <type name="String"/>
+      <desc>A string containing a JavaScript event type, such as "click" or "keydown"</desc>
+      <type name="PlainObject"/>
       <desc>An object of one or more event types and previously bound functions to unbind from them.</desc>
     </argument>
-  </signature>
-  <signature>
-    <added>1.6</added>
-    <argument name="namespace" type="String">
-      <desc>A string containing a namespace to unbind all events from.</desc>
+    <argument name="handler" type="Function" optional="true">
+      <desc>A function to execute at the time the event is triggered.</desc>
+      <argument name="eventObject" type="Event" />
     </argument>
   </signature>
   <longdesc>

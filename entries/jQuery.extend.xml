@@ -15,7 +15,7 @@
   </signature>
   <signature>
     <added>1.1.4</added>
-    <argument name="deep" optional="true" type="Boolean">
+    <argument name="deep" type="true">
       <desc>If true, the merge becomes recursive (aka. deep copy).  Passing <code>false</code> for this argument is not supported.</desc>
     </argument>
     <argument name="target" type="Object">

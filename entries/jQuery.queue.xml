@@ -89,17 +89,7 @@ runIt();
           <typeArgument name="any"/>
         </type>
         <desc>An array of functions to replace the current queue contents.</desc>
-      </argument>
-    </signature>
-    <signature>
-      <added>1.3</added>
-      <argument name="element" type="Element">
-        <desc>A DOM element on which to add a queued function.</desc>
-      </argument>
-      <argument name="queueName" type="String">
-        <desc>A string containing the name of the queue. Defaults to <code>fx</code>, the standard effects queue.</desc>
-      </argument>
-      <argument name="callback" type="Function">
+        <type name="Function"/>
         <desc>The new function to add to the queue.</desc>
       </argument>
     </signature>

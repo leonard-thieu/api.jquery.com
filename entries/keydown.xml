@@ -3,7 +3,7 @@
   <title>.keydown()</title>
   <signature>
     <added>1.0</added>
-    <argument name="handler" type="Function">
+    <argument name="handler" type="Function" optional="true">
       <desc>A function to execute each time the event is triggered.</desc>
       <argument name="this" type="Element" />
       <argument name="eventObject" type="Event" />
@@ -11,7 +11,7 @@
   </signature>
   <signature>
     <added>1.4.3</added>
-    <argument name="eventData" type="Anything" optional="true">
+    <argument name="eventData" type="Anything">
       <desc>An object containing data that will be passed to the event handler.</desc>
     </argument>
     <argument name="handler" type="Function">
@@ -19,9 +19,6 @@
       <argument name="this" type="Element" />
       <argument name="eventObject" type="Event" />
     </argument>
-  </signature>
-  <signature>
-    <added>1.0</added>
   </signature>
   <desc>Bind an event handler to the "keydown" JavaScript event, or trigger that event on an element.</desc>
   <longdesc>

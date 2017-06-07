@@ -3,34 +3,12 @@
   <title>.add()</title>
   <signature>
     <added>1.0</added>
-    <argument name="selector" type="Selector">
-      <desc>A string representing a selector expression to find additional elements to add to the set of matched elements.</desc>
-    </argument>
-  </signature>
-  <signature>
-    <added>1.0</added>
-    <argument name="elements" type="Element">
-      <desc>One or more elements to add to the set of matched elements.</desc>
-    </argument>
-  </signature>
-  <signature>
-    <added>1.0</added>
-    <argument name="html" type="htmlString">
-      <desc>An HTML fragment to add to the set of matched elements.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.3.2</added>
-    <argument name="selection" type="jQuery">
-      <desc>An existing jQuery object to add to the set of matched elements.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.4</added>
     <argument name="selector" type="Selector">
       <desc>A string representing a selector expression to find additional elements to add to the set of matched elements.</desc>
     </argument>
-    <argument name="context" type="Element">
+    <argument name="context" type="Element" optional="true">
       <desc>The point in the document at which the selector should begin matching; similar to the context argument of the <code>$(selector, context)</code> method.</desc>
     </argument>
   </signature>

@@ -3,23 +3,6 @@
   <title>jQuery.proxy()</title>
   <signature>
     <added>1.4</added>
-    <argument name="function" type="Function">
-      <desc>The function whose context will be changed.</desc>
-    </argument>
-    <argument name="context" type="PlainObject">
-      <desc>The object to which the context (<code>this</code>) of the function should be set.</desc>
-    </argument>
-  </signature>
-  <signature>
-    <added>1.4</added>
-    <argument name="context" type="PlainObject">
-      <desc>The object to which the context of the function should be set.</desc>
-    </argument>
-    <argument name="name" type="String">
-      <desc>The name of the function whose context will be changed (should be a property of the <code>context</code> object).</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.6</added>
     <argument name="function" type="Function">
       <desc>The function whose context will be changed.</desc>
@@ -35,6 +18,7 @@
     </argument>
   </signature>
   <signature>
+    <added>1.4</added>
     <added>1.6</added>
     <argument name="context" type="PlainObject">
       <desc>The object to which the context of the function should be set.</desc>

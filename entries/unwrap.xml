@@ -3,8 +3,6 @@
   <title>.unwrap()</title>
   <signature>
     <added>1.4</added>
-  </signature>
-  <signature>
     <added>3.0</added>
     <argument name="selector" type="String" optional="true">
       <desc>A selector to check the parent element against. If an element's parent does not match the selector, the element won't be unwrapped.</desc>

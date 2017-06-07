@@ -73,7 +73,7 @@ showIt();
   <entry type="method" name="queue" return="jQuery">
     <signature>
       <added>1.2</added>
-      <argument name="queueName" optional="true" type="String">
+      <argument name="queueName" type="String">
         <desc>A string containing the name of the queue. Defaults to <code>fx</code>, the standard effects queue.</desc>
       </argument>
       <argument name="newQueue">
@@ -85,9 +85,25 @@ showIt();
     </signature>
     <signature>
       <added>1.2</added>
-      <argument name="queueName" optional="true" type="String">
+      <argument name="newQueue">
+        <type name="Array">
+          <typeArgument name="any"/>
+        </type>
+        <desc>An array of functions to replace the current queue contents.</desc>
+      </argument>
+    </signature>
+    <signature>
+      <added>1.2</added>
+      <argument name="queueName" type="String">
         <desc>A string containing the name of the queue. Defaults to <code>fx</code>, the standard effects queue.</desc>
       </argument>
+      <argument name="callback" type="Function">
+        <argument name="next" type="Function" />
+        <desc>The new function to add to the queue, with a function to call that will dequeue the next item.</desc>
+      </argument>
+    </signature>
+    <signature>
+      <added>1.2</added>
       <argument name="callback" type="Function">
         <argument name="next" type="Function" />
         <desc>The new function to add to the queue, with a function to call that will dequeue the next item.</desc>

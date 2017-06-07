@@ -4,14 +4,23 @@
   <desc>Handle custom Ajax options or modify existing options before each request is sent and before they are processed by <code>$.ajax()</code>.</desc>
   <signature>
     <added>1.5</added>
-    <argument name="dataTypes" optional="true" type="String">
+    <argument name="dataTypes" type="String">
       <desc>An optional string containing one or more space-separated dataTypes</desc>
     </argument>
     <argument name="handler" type="Function">
       <desc>A handler to set default values for future Ajax requests.</desc>
       <argument name="options" type="PlainObject" />
       <argument name="originalOptions" type="PlainObject" />
-      <argument name="jqXHR" type="jqXHR" />      
+      <argument name="jqXHR" type="jqXHR" />
+    </argument>
+  </signature>
+  <signature>
+    <added>1.5</added>
+    <argument name="handler" type="Function">
+      <desc>A handler to set default values for future Ajax requests.</desc>
+      <argument name="options" type="PlainObject" />
+      <argument name="originalOptions" type="PlainObject" />
+      <argument name="jqXHR" type="jqXHR" />
     </argument>
   </signature>
   <longdesc>

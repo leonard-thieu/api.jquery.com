@@ -3,16 +3,6 @@
   <title>jQuery.param()</title>
   <signature>
     <added>1.2</added>
-    <argument name="obj">
-      <type name="Array">
-        <typeArgument name="any"/>
-      </type>
-      <type name="PlainObject"/>
-      <type name="jQuery"/>
-      <desc>An array, a plain object, or a jQuery object to serialize.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.4</added>
     <argument name="obj">
       <type name="Array">
@@ -22,7 +12,7 @@
       <type name="jQuery"/>
       <desc>An array, a plain object, or a jQuery object to serialize.</desc>
     </argument>
-    <argument name="traditional" type="Boolean">
+    <argument name="traditional" type="Boolean" optional="true">
       <desc>A Boolean indicating whether to perform a traditional "shallow" serialization.</desc>
     </argument>
   </signature>
