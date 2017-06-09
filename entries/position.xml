@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<entry type="method" name="position" return="Object">
+<entry type="method" name="position" return="Coordinates">
   <title>.position()</title>
   <signature>
     <added>1.2</added>

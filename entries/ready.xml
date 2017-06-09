@@ -5,6 +5,10 @@
   <signature>
     <added>1.0</added>
     <argument name="handler" type="Function">
+      <argument name="$" type="jQueryStatic"/>
+      <return>
+        <type name="void"/>
+      </return>
       <desc>A function to execute after the DOM is ready.</desc>
     </argument>
   </signature>

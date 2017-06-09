@@ -2,7 +2,7 @@
 <entry type="method" name="serializeArray">
   <return>
     <type name="Array">
-      <typeArgument name="any"/>
+      <typeArgument name="NameValuePair"/>
     </type>
   </return>
   <title>.serializeArray()</title>

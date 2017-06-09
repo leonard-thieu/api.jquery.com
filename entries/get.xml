@@ -69,7 +69,7 @@ $( "*", document.body ).click(function( event ) {
   <entry type="method" name="get">
     <return>
       <type name="Array">
-        <typeArgument name="any"/>
+        <typeArgument name="Element"/>
       </type>
     </return>
     <title>.get()</title>

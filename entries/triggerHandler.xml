@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <entry type="method" name="triggerHandler">
   <return>
-    <type name="Object"/>
     <type name="undefined"/>
+    <type name="Anything"/>
   </return>
   <title>.triggerHandler()</title>
   <desc>Execute all handlers attached to an element for an event.</desc>

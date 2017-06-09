@@ -16,8 +16,6 @@
         <typeArgument name="any"/>
       </type>
       <type name="PlainObject"/>
-      <type name="String"/>
-      <type name="Number"/>
       <desc>Additional parameters to pass along to the event handler.</desc>
     </argument>
   </signature>

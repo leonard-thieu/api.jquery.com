@@ -4,23 +4,17 @@
   <desc>Bind an event handler to the "select" JavaScript event, or trigger that event on an element.</desc>
   <signature>
     <added>1.0</added>
-    <argument name="handler" type="Function" optional="true">
-      <desc>A function to execute each time the event is triggered.</desc>
-      <argument name="this" type="Element" />
-      <argument name="eventObject" type="Event" />
-    </argument>
+    <xi:include href="../includes/handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <signature>
     <added>1.4.3</added>
-    <argument name="eventData" type="Anything">
+    <typeParameter name="TData"/>
+    <argument name="eventData">
+      <typeArgument name="TData"/>
       <desc>An object containing data that will be passed to the event handler.</desc>
     </argument>
-    <argument name="handler" type="Function">
-      <desc>A function to execute each time the event is triggered.</desc>
-      <argument name="this" type="Element" />
-      <argument name="eventObject" type="Event" />
-    </argument>
-  </signature>
+    <xi:include href="../includes/generic-handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    </signature>
   <longdesc>
     <p>This method is a shortcut for <code>.on( "select", handler )</code> in the first two variations, and <code>.trigger( "select" )</code> in the third.</p>
     <p>The <code>select</code> event is sent to an element when the user makes a text selection inside it. This event is limited to <code>&lt;input type="text"&gt;</code> fields and <code>&lt;textarea&gt;</code> boxes.</p>

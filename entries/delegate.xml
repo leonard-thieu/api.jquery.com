@@ -10,28 +10,22 @@
     <argument name="eventType" type="String">
       <desc>A string containing one or more space-separated JavaScript event types, such as "click" or "keydown," or custom event names.</desc>
     </argument>
-    <argument name="handler" type="Function">
-      <desc>A function to execute at the time the event is triggered.</desc>
-      <argument name="this" type="Element" />
-      <argument name="eventObject" type="Event" />
-    </argument>
+    <xi:include href="../includes/handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
   </signature>
   <signature>
     <added>1.4.2</added>
+    <typeParameter name="TData"/>
     <argument name="selector" type="String">
       <desc>A selector to filter the elements that trigger the event.</desc>
     </argument>
     <argument name="eventType" type="String">
       <desc>A string containing one or more space-separated JavaScript event types, such as "click" or "keydown," or custom event names.</desc>
     </argument>
-    <argument name="eventData" type="Anything">
+    <argument name="eventData">
+      <typeArgument name="TData"/>
       <desc>An object containing data that will be passed to the event handler.</desc>
     </argument>
-    <argument name="handler" type="Function">
-      <desc>A function to execute at the time the event is triggered.</desc>
-      <argument name="this" type="Element" />
-      <argument name="eventObject" type="Event" />
-    </argument>
+    <xi:include href="../includes/generic-handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <signature>
     <added>1.4.3</added>

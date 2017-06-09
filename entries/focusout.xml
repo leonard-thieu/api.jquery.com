@@ -4,23 +4,16 @@
   <desc>Bind an event handler to the "focusout" JavaScript event.</desc>
   <signature>
     <added>1.4</added>
-    <argument name="handler" type="Function" optional="true">
-      <desc>A function to execute each time the event is triggered.</desc>
-      <argument name="this" type="Element" />
-      <argument name="eventObject" type="Event" />
-    </argument>
+    <xi:include href="../includes/handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <signature>
-    <added>1.4.3</added>
-    <argument name="eventData" type="Anything">
-      <desc>An object containing data that will be passed to the event handler.</desc>
-    </argument>
-    <argument name="handler" type="Function">
-      <desc>A function to execute each time the event is triggered.</desc>
-      <argument name="this" type="Element" />
-      <argument name="eventObject" type="Event" />
-    </argument>
-  </signature>
+  <added>1.4.3</added>
+  <typeParameter name="TData"/>
+  <argument name="eventData">
+    <typeArgument name="TData"/>
+    <desc>An object containing data that will be passed to the event handler.</desc>
+  </argument>
+  <xi:include href="../includes/generic-handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   <longdesc>
     <p>This method is a shortcut for <code>.on( "focusout", handler )</code> when passed arguments, and <code>.trigger( "focusout" )</code> when no arguments are passed.</p>
     <p>The <code>focusout</code> event is sent to an element when it, or any element inside of it, loses focus. This is distinct from the <a href="/blur/">blur</a> event in that it supports detecting the loss of focus on descendant elements (in other words, it supports event bubbling).</p>

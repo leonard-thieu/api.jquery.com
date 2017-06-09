@@ -26,7 +26,11 @@
             <typeArgument name="TData"/>
           </type>
         </argument>
-        <argument name="extraParameter" type="Anything" optional="true" rest="true" />
+        <argument name="extraParameter" rest="true">
+          <type name="Array">
+            <typeArgument name="Anything"/>
+          </type>
+        </argument>
       </type>
       <type name="false"/>
     </argument>
@@ -46,7 +50,11 @@
       <type name="Function">
         <argument name="this" type="Element"/>
         <argument name="eventObject" type="Event" />
-        <argument name="extraParameter" type="Anything" optional="true" rest="true" />
+        <argument name="extraParameter" rest="true">
+          <type name="Array">
+            <typeArgument name="Anything"/>
+          </type>
+        </argument>
       </type>
       <type name="false"/>
     </argument>
@@ -70,7 +78,11 @@
             <typeArgument name="TData"/>
           </type>
         </argument>
-        <argument name="extraParameter" type="Anything" optional="true" rest="true" />
+        <argument name="extraParameter" rest="true">
+          <type name="Array">
+            <typeArgument name="Anything"/>
+          </type>
+        </argument>
       </type>
       <type name="false"/>
     </argument>
@@ -85,7 +97,11 @@
       <type name="Function">
         <argument name="this" type="Element"/>
         <argument name="eventObject" type="Event" />
-        <argument name="extraParameter" type="Anything" optional="true" rest="true" />
+        <argument name="extraParameter" rest="true">
+          <type name="Array">
+            <typeArgument name="Anything"/>
+          </type>
+        </argument>
       </type>
       <type name="false"/>
     </argument>

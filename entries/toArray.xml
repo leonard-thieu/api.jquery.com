@@ -2,7 +2,7 @@
 <entry type="method" name="toArray">
   <return>
     <type name="Array">
-      <typeArgument name="any"/>
+      <typeArgument name="Element"/>
     </type>
   </return>
   <title>.toArray()</title>

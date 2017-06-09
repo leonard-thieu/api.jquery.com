@@ -4,7 +4,12 @@
   <entry type="method" name="val">
     <return type="String"/>
     <return type="Number"/>
-    <return type="Array"/>
+    <return>
+        <type name="Array">
+            <typeArgument name="String"/>
+        </type>
+    </return>
+      <return type="undefined"/>
     <title>.val()</title>
     <signature>
       <added>1.0</added>
@@ -116,7 +121,8 @@ $( "input" )
         </type>
         <desc>A string of text, a number, or an array of strings corresponding to the value of each matched element to set as selected/checked.</desc>
         <type name="Function">
-          <argument name="index" type="Integer" />
+            <argument name="this" type="Element" />
+            <argument name="index" type="Integer" />
           <argument name="value" type="String" />
           <return type="String" />
         </type>

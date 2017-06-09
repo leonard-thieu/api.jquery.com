@@ -115,6 +115,7 @@ $( "input" ).change(function() {
       </argument>
       <argument name="value">
         <type name="Function">
+          <argument name="this" type="Element" />
           <argument name="index" type="Integer" />
           <argument name="oldPropertyValue" type="Anything" />
           <return type="Anything" />

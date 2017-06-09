@@ -4,23 +4,17 @@
   <desc>Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.</desc>
   <signature>
     <added>1.0</added>
-    <argument name="handler" type="Function" optional="true">
-      <desc>A function to execute each time the event is triggered.</desc>
-      <argument name="this" type="Element" />
-      <argument name="eventObject" type="Event" />
-    </argument>
+    <xi:include href="../includes/handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <signature>
     <added>1.4.3</added>
-    <argument name="eventData" type="Anything">
+    <typeParameter name="TData"/>
+    <argument name="eventData">
+      <typeArgument name="TData"/>
       <desc>An object containing data that will be passed to the event handler.</desc>
     </argument>
-    <argument name="handler" type="Function">
-      <desc>A function to execute each time the event is triggered.</desc>
-      <argument name="this" type="Element" />
-      <argument name="eventObject" type="Event" />
-    </argument>
-  </signature>
+    <xi:include href="../includes/generic-handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    </signature>
   <longdesc>
     <p>This method is a shortcut for <code>.on( "scroll", handler )</code> in the first and second variations, and <code>.trigger( "scroll" )</code> in the third.</p>
     <p>The <code>scroll</code> event is sent to an element when the user scrolls to a different place in the element. It applies to <code>window</code> objects, but also to scrollable frames and elements with the <code>overflow </code>CSS property set to <code>scroll</code> (or <code>auto</code> when the element's explicit height or width is less than the height or width of its contents).</p>
