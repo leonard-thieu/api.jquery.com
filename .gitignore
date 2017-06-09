@@ -1,5 +1,3 @@
 /dist/
 /node_modules/
 config.js*
-.idea/workspace.iml
-.idea/tasks.iml
