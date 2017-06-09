@@ -5,7 +5,7 @@
     <signature>
       <added>1.0</added>
       <argument name="doneCallback" type="Function">
-        <argument name="this" type="AjaxSettings"/>
+        <argument name="this" type="TContext"/>
         <argument name="data" type="Anything"/>
         <argument name="textStatus" type="String"/>
         <argument name="jqXHR" type="jqXHR"/>
@@ -17,7 +17,7 @@
     <signature>
       <added>1.0</added>
       <argument name="failCallback" type="Function">
-        <argument name="this" type="AjaxSettings"/>
+        <argument name="this" type="TContext"/>
         <argument name="jqXHR" type="jqXHR"/>
         <argument name="textStatus" type="String"/>
         <argument name="errorThrown" type="Anything"/>
@@ -32,7 +32,7 @@
     <signature>
       <added>1.6</added>
       <argument name="alwaysCallback" type="Function">
-        <argument name="this" type="AjaxSettings"/>
+        <argument name="this" type="TContext"/>
         <argument name="data_jqXHR">
           <type name="Anything"/>
           <type name="jqXHR"/>
@@ -50,13 +50,13 @@
     <signature>
       <added>1.0</added>
       <argument name="doneCallback" type="Function">
-        <argument name="this" type="AjaxSettings"/>
+        <argument name="this" type="TContext"/>
         <argument name="data" type="Anything"/>
         <argument name="textStatus" type="String"/>
         <argument name="jqXHR" type="jqXHR"/>
       </argument>
       <argument name="failCallback" type="Function">
-        <argument name="this" type="AjaxSettings"/>
+        <argument name="this" type="TContext"/>
         <argument name="jqXHR" type="jqXHR"/>
         <argument name="textStatus" type="String"/>
         <argument name="errorThrown" type="Anything"/>

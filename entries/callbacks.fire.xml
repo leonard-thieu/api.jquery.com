@@ -3,7 +3,10 @@
   <title>callbacks.fire()</title>
   <signature>
     <added>1.7</added>
-    <argument name="arguments" type="Anything">
+    <argument name="arguments" rest="true">
+      <type name="Array">
+        <typeArgument name="Anything"/>
+      </type>
       <desc>The argument or list of arguments to pass back to the callback list.</desc>
     </argument>
   </signature>

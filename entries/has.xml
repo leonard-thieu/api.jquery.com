@@ -3,13 +3,10 @@
   <title>.has()</title>
   <signature>
     <added>1.4</added>
-    <argument name="selector" type="String">
+    <argument name="selector">
+      <type name="String"/>
       <desc>A string containing a selector expression to match elements against.</desc>
-    </argument>
-  </signature>
-  <signature>
-    <added>1.4</added>
-    <argument name="contained" type="Element">
+      <type name="Element"/>
       <desc>A DOM element to match elements against.</desc>
     </argument>
   </signature>

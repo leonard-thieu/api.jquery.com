@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
-<entry name="deferred.pipe" type="method" return="Promise" deprecated="1.8">
+<entry name="deferred.pipe" type="method" deprecated="1.8">
+  <return>
+    <type name="Promise">
+      <typeArgument name="T"/>
+    </type>
+  </return>
   <title>deferred.pipe()</title>
   <signature>
     <added>1.6</added>

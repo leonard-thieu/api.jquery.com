@@ -2,20 +2,14 @@
 <entry type="method" name="index" return="Integer">
   <title>.index()</title>
   <signature>
-    <added>1.4</added>
-  </signature>
-  <signature>
-    <added>1.4</added>
-    <argument name="selector" type="Selector">
-      <desc>A selector representing a jQuery collection in which to look for an element.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.0</added>
-    <argument name="element">
-      <desc>The DOM element or first element within the jQuery object to look for.</desc>
+    <added>1.4</added>
+    <argument name="element" optional="true">
       <type name="Element"/>
       <type name="jQuery"/>
+      <desc>The DOM element or first element within the jQuery object to look for.</desc>
+      <type name="Selector"/>
+      <desc>A selector representing a jQuery collection in which to look for an element.</desc>
     </argument>
   </signature>
   <desc>Search for a given element from among the matched elements.</desc>

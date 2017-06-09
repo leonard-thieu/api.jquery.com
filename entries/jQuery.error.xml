@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.error" return="">
+<entry type="method" name="jQuery.error" return="never">
   <title>jQuery.error()</title>
   <signature>
     <added>1.4.1</added>

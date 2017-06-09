@@ -3,16 +3,10 @@
   <title>.prevUntil()</title>
   <signature>
     <added>1.4</added>
-    <argument name="selector" optional="true" type="Selector">
-      <desc>A string containing a selector expression to indicate where to stop matching preceding sibling elements.</desc>
-    </argument>
-    <argument name="filter" optional="true" type="Selector">
-      <desc>A string containing a selector expression to match elements against.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.6</added>
-    <argument name="element" optional="true">
+    <argument name="selector" optional="true">
+      <type name="Selector"/>
+      <desc>A string containing a selector expression to indicate where to stop matching preceding sibling elements.</desc>
       <type name="Element"/>
       <type name="jQuery"/>
       <desc>A DOM node or jQuery object indicating where to stop matching preceding sibling elements.</desc>

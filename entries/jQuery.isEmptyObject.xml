@@ -3,7 +3,7 @@
   <title>jQuery.isEmptyObject()</title>
   <signature>
     <added>1.4</added>
-    <argument name="object" type="Object">
+    <argument name="object" type="Anything">
       <desc>The object that will be checked to see if it's empty.</desc>
     </argument>
   </signature>

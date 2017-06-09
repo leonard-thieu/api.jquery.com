@@ -1,55 +1,50 @@
 <?xml version="1.0"?>
-<entry name="deferred.then" type="method" return="Promise">
+<entry name="deferred.then" type="method">
+  <return>
+    <type name="Promise">
+      <typeArgument name="T"/>
+    </type>
+  </return>
   <title>deferred.then()</title>
   <signature>
     <added>1.8</added>
-    <argument name="doneFilter" type="Function">
-      <desc>
-        A function that is called when the Deferred is resolved.
-      </desc>
+    <argument name="doneFilter">
+      <type name="Function"/>
+      <type name="Null"/>
+      <desc>A function that is called when the Deferred is resolved.</desc>
     </argument>
-    <argument name="failFilter" type="Function" optional="true">
-      <desc>
-        An optional function that is called when the Deferred is rejected.
-      </desc>
+    <argument name="failFilter" optional="true">
+      <type name="Function"/>
+      <type name="Null"/>
+      <desc>An optional function that is called when the Deferred is rejected.</desc>
     </argument>
-    <argument name="progressFilter" type="Function" optional="true">
-      <desc>
-        An optional function that is called when progress notifications are sent to the Deferred.
-      </desc>
+    <argument name="progressFilter" optional="true">
+      <type name="Function"/>
+      <type name="Null"/>
+      <desc>An optional function that is called when progress notifications are sent to the Deferred.</desc>
     </argument>
   </signature>
   <signature>
     <added>1.5</added>
     <removed>1.8</removed>
     <argument name="doneCallbacks" type="Function">
-      <desc>
-        A function, or array of functions, called when the Deferred is resolved.
-      </desc>
+      <desc>A function, or array of functions, called when the Deferred is resolved.</desc>
     </argument>
     <argument name="failCallbacks" type="Function">
-      <desc>
-        A function, or array of functions, called when the Deferred is rejected.
-      </desc>
+      <desc>A function, or array of functions, called when the Deferred is rejected.</desc>
     </argument>
   </signature>
   <signature>
     <added>1.7</added>
     <removed>1.8</removed>
     <argument name="doneCallbacks" type="Function">
-      <desc>
-        A function, or array of functions, called when the Deferred is resolved.
-      </desc>
+      <desc>A function, or array of functions, called when the Deferred is resolved.</desc>
     </argument>
     <argument name="failCallbacks" type="Function">
-      <desc>
-        A function, or array of functions, called when the Deferred is rejected.
-      </desc>
+      <desc>A function, or array of functions, called when the Deferred is rejected.</desc>
     </argument>
     <argument name="progressCallbacks" type="Function" optional="true">
-      <desc>
-        A function, or array of functions, called when the Deferred notifies progress.
-      </desc>
+      <desc>A function, or array of functions, called when the Deferred notifies progress.</desc>
     </argument>
   </signature>
   <desc>Add handlers to be called when the Deferred object is resolved, rejected, or still in progress. </desc>

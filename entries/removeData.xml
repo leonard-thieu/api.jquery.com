@@ -3,18 +3,13 @@
   <title>.removeData()</title>
   <signature>
     <added>1.2.3</added>
-    <argument name="name" type="String" optional="true">
-      <desc>A string naming the piece of data to delete.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.7</added>
-    <argument name="list" optional="true">
-      <desc>An array or space-separated string naming the pieces of data to delete.</desc>
-      <type name="Array">
+    <argument name="name" optional="true">
+      <type name="TypeOrArray">
         <typeArgument name="String"/>
       </type>
-      <type name="String"/>
+      <desc>A string naming the piece of data to delete.</desc>
+      <desc>An array or space-separated string naming the pieces of data to delete.</desc>
     </argument>
   </signature>
   <desc>Remove a previously-stored piece of data.</desc>

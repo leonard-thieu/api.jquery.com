@@ -6,15 +6,22 @@
     <signature>
       <added>1.0</added>
       <added>1.4</added>
-      <argument name="selector" type="Selector" optional="true">
+      <argument name="selector" optional="true">
+        <type name="Selector"/>
         <desc>A string containing a selector expression</desc>
+        <type name="TypeOrArray">
+          <typeArgument name="Element"/>
+        </type>
         <desc>A DOM element to wrap in a jQuery object.</desc>
         <desc>An array containing a set of DOM elements to wrap in a jQuery object.</desc>
+        <type name="PlainObject"/>
         <desc>A plain object to wrap in a jQuery object.</desc>
+        <type name="jQuery"/>
         <desc>An existing jQuery object to clone.</desc>
       </argument>
       <argument name="context" optional="true">
         <type name="Element"/>
+        <type name="Document"/>
         <type name="jQuery"/>
         <desc>A DOM Element, Document, or jQuery to use as context</desc>
       </argument>
@@ -222,6 +229,10 @@ $( "<div/>", {
     <signature>
       <added>1.0</added>
       <argument name="callback" type="Function">
+        <argument name="$" type="jQueryStatic"/>
+        <return>
+          <type name="void"/>
+        </return>
         <desc>The function to execute when the DOM is ready.</desc>
       </argument>
     </signature>

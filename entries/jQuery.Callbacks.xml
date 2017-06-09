@@ -3,7 +3,7 @@
   <title>jQuery.Callbacks()</title>
   <signature>
     <added>1.7</added>
-    <argument name="flags" type="String">
+    <argument name="flags" type="String" optional="true">
       <desc>An optional list of space-separated flags that change how the callback list behaves.</desc>
     </argument>
   </signature>

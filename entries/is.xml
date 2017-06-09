@@ -3,29 +3,22 @@
   <title>.is()</title>
   <signature>
     <added>1.0</added>
+    <added>1.6</added>
     <argument name="selector" type="Selector">
       <desc>A string containing a selector expression to match elements against.</desc>
-    </argument>
-  </signature>
-  <signature>
-    <added>1.6</added>
-    <argument name="function" type="Function">
+      <type name="Function">
+        <argument name="this" type="Element" />
+        <argument name="index" type="Integer" />
+        <argument name="element" type="Element" />
+        <return type="Boolean" />
+      </type>
       <desc>A function used as a test for every element in the set. It accepts two arguments, <code>index</code>, which is the element's index in the jQuery collection, and <code>element</code>, which is the DOM element. Within the function, <code>this</code> refers to the current DOM element.</desc>
-      <argument name="this" type="Element" />
-      <argument name="index" type="Integer" />
-      <argument name="element" type="Element" />
-      <return type="Boolean" />      
-    </argument>
-  </signature>
-  <signature>
-    <added>1.6</added>
-    <argument name="selection" type="jQuery">
+      <type name="jQuery"/>
       <desc>An existing jQuery object to match the current set of elements against.</desc>
-    </argument>
-  </signature>
-  <signature>
-    <added>1.6</added>
-    <argument name="elements" type="Element">
+      <type name="Element"/>
+      <type name="Array">
+        <typeArgument name="Element"/>
+      </type>
       <desc>One or more elements to match the current set of elements against.</desc>
     </argument>
   </signature>

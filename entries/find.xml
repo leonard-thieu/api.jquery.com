@@ -3,16 +3,13 @@
   <title>.find()</title>
   <signature>
     <added>1.0</added>
-    <argument name="selector" type="Selector">
-      <desc>A string containing a selector expression to match elements against.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.6</added>
-    <argument name="element">
-      <desc>An element or a jQuery object to match elements against.</desc>
+    <argument name="selector">
+      <type name="Selector"/>
+      <desc>A string containing a selector expression to match elements against.</desc>
       <type name="Element"/>
       <type name="jQuery"/>
+      <desc>An element or a jQuery object to match elements against.</desc>
     </argument>
   </signature>
   <desc>Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.</desc>

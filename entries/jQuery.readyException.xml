@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.readyException" return="undefined">
+<entry type="method" name="jQuery.readyException" return="Anything">
   <title>jQuery.readyException()</title>
   <desc>Handles errors thrown synchronously in functions wrapped in <code>jQuery()</code>.</desc>
   <signature>

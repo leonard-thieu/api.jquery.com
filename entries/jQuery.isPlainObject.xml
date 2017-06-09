@@ -3,7 +3,7 @@
   <title>jQuery.isPlainObject()</title>
   <signature>
     <added>1.4</added>
-    <argument name="object" type="PlainObject">
+    <argument name="object" type="Anything">
       <desc>The object that will be checked to see if it's a plain object.</desc>
     </argument>
   </signature>

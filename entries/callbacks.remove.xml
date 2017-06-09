@@ -5,8 +5,7 @@
     <added>1.7</added>
     <argument name="callbacks">
       <desc>A function, or array of functions, that are to be removed from the callback list.</desc>
-      <type name="Function"/>
-      <type name="Array">
+      <type name="TypeOrArray">
         <typeArgument name="Function"/>
       </type>
     </argument>

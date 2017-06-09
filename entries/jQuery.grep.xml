@@ -2,21 +2,23 @@
 <entry type="method" name="jQuery.grep">
   <return>
     <type name="Array">
-      <typeArgument name="any"/>
+      <typeArgument name="T"/>
     </type>
   </return>
   <title>jQuery.grep()</title>
   <desc>Finds the elements of an array which satisfy a filter function. The original array is not affected.</desc>
   <signature>
     <added>1.0</added>
+    <typeParameter name="T"/>
     <argument name="array">
       <type name="ArrayLikeObject">
-        <typeArgument name="Anything"/>
+        <typeArgument name="T"/>
       </type>
       <desc>The array-like object to search through.</desc>
     </argument>
     <argument name="function" type="Function">
-      <argument name="elementOfArray" type="Object" />
+      <argument name="this" type="Window" />
+      <argument name="elementOfArray" type="T" />
       <argument name="indexInArray" type="Integer" />
       <return type="Boolean" />
       <desc>The function to process each item against.  The first argument to the function is the item, and the second argument is the index.  The function should return a Boolean value.  <code>this</code> will be the global window object.</desc>

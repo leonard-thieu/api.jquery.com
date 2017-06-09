@@ -4,9 +4,13 @@
   <signature>
     <added>1.7</added>
     <argument name="context" optional="true">
+      <type name="Anything"/>
       <desc>A reference to the context in which the callbacks in the list should be fired.</desc>
     </argument>
     <argument name="args" optional="true">
+      <type name="TypeOrArray">
+        <typeArgument name="Anything"/>
+      </type>
       <desc>An argument, or array of arguments, to pass to the callbacks in the list.</desc>
     </argument>
   </signature>

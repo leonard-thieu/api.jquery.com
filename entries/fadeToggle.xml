@@ -10,7 +10,10 @@
   </signature>
   <signature>
     <added>1.4.4</added>
-    <xi:include href="../includes/options-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <argument name="options">
+      <type name="EffectsOptions"/>
+      <desc>A map of additional options to pass to the method.</desc>
+    </argument>
   </signature>
 
   <longdesc>

@@ -4,7 +4,7 @@
   <entry type="method" name="jQuery.queue">
     <return>
       <type name="Array">
-        <typeArgument name="any"/>
+        <typeArgument name="Function"/>
       </type>
     </return>
     <title>jQuery.queue()</title>
@@ -85,12 +85,11 @@ runIt();
         <desc>A string containing the name of the queue. Defaults to <code>fx</code>, the standard effects queue.</desc>
       </argument>
       <argument name="newQueue">
-        <type name="Array">
-          <typeArgument name="any"/>
+        <type name="TypeOrArray">
+          <typeArgument name="Function"/>
         </type>
-        <desc>An array of functions to replace the current queue contents.</desc>
-        <type name="Function"/>
         <desc>The new function to add to the queue.</desc>
+        <desc>An array of functions to replace the current queue contents.</desc>
       </argument>
     </signature>
     <desc>Manipulate the queue of functions to be executed on the matched element.</desc>

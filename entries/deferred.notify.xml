@@ -3,10 +3,11 @@
   <title>deferred.notify()</title>
   <signature>
     <added>1.7</added>
-    <argument name="args" type="Object">
-      <desc>
-        Optional arguments that are passed to the progressCallbacks.
-      </desc>
+    <argument name="args" rest="true">
+      <type name="Array">
+        <typeArgument name="Anything"/>
+      </type>
+      <desc>Optional arguments that are passed to the progressCallbacks.</desc>
     </argument>
   </signature>
   <desc> Call the progressCallbacks on a Deferred object with the given <code>args</code>. </desc>

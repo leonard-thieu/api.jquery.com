@@ -1,14 +1,32 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.when" return="Promise">
+<entry type="method" name="jQuery.when">
+  <return>
+    <type name="Promise">
+      <typeArgument name="T"/>
+    </type>
+  </return>
   <title>jQuery.when()</title>
   <signature>
+    <typeParameter name="T"/>
     <added>1.5</added>
     <argument name="deferreds" rest="true">
       <desc>Zero or more Thenable objects.</desc>
       <type name="Array">
-        <typeArgument name="Deferred"/>
-        <typeArgument name="Promise"/>
-        <typeArgument name="Thenable"/>
+        <typeArgument>
+          <type name="Deferred">
+            <typeArgument name="T"/>
+          </type>
+        </typeArgument>
+        <typeArgument>
+          <type name="Promise">
+            <typeArgument name="T"/>
+          </type>
+        </typeArgument>
+        <typeArgument>
+          <type name="Thenable">
+            <typeArgument name="T"/>
+          </type>
+        </typeArgument>
       </type>
     </argument>
   </signature>

@@ -4,25 +4,24 @@
   <desc>Hide the matched elements.</desc>
   <signature>
     <added>1.0</added>
+    <argument name="options" optional="true">
+      <type name="EffectsOptions"/>
+      <desc>A map of additional options to pass to the method.</desc>
+    </argument>
   </signature>
   <signature>
     <added>1.0</added>
-    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+  </signature>
+  <signature>
+    <added>1.0</added>
+    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
     <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <signature>
-    <added>1.0</added>
-    <xi:include href="../includes/options-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-  </signature>
-  <signature>
     <added>1.4.3</added>
-    <!-- doesn't use the include because duration is required for this signature -->
-    <argument name="duration" default="400">
-      <desc>A string or number determining how long the animation will run.</desc>
-      <type name="Number"/>
-      <type name="String"/>
-    </argument>
-    <xi:include href="../includes/easing-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+    <xi:include href="../includes/easing-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
     <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
 

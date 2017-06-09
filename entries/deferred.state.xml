@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
-<entry name="deferred.state" type="method" return="String">
+<entry name="deferred.state" type="method">
+  <return>
+    <type name="String" value="pending"/>
+    <type name="String" value="resolved"/>
+    <type name="String" value="rejected"/>
+  </return>
   <title>deferred.state()</title>
   <signature>
     <added>1.7</added>

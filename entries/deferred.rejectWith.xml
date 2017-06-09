@@ -8,9 +8,9 @@
         Context passed to the failCallbacks as the <code>this</code> object.
       </desc>
     </argument>
-    <argument name="args" optional="true">
+    <argument name="args" rest="true">
       <type name="Array">
-        <typeArgument name="any"/>
+        <typeArgument name="Anything"/>
       </type>
       <desc>
         An optional array of arguments that are passed to the failCallbacks.

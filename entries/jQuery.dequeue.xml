@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.dequeue" return="undefined">
+<entry type="method" name="jQuery.dequeue" return="void">
   <title>jQuery.dequeue()</title>
   <signature>
     <added>1.3</added>

@@ -3,19 +3,18 @@
   <title>.replaceWith()</title>
   <signature>
     <added>1.2</added>
+    <added>1.4</added>
     <argument name="newContent">
-      <desc>The content to insert. May be an HTML string, DOM element, array of DOM elements, or jQuery object.</desc>
       <type name="htmlString"/>
-      <type name="Element"/>
-      <type name="Array">
+      <type name="TypeOrArray">
         <typeArgument name="Element"/>
       </type>
       <type name="jQuery"/>
-    </argument>
-  </signature>
-  <signature>
-    <added>1.4</added>
-    <argument name="function" type="Function">
+      <desc>The content to insert. May be an HTML string, DOM element, array of DOM elements, or jQuery object.</desc>
+      <type name="Function">
+        <argument name="this" type="Element"/>
+        <return type="Anything"/>
+      </type>
       <desc>A function that returns content with which to replace the set of matched elements.</desc>
     </argument>
   </signature>

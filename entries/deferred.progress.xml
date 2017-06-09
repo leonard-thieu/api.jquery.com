@@ -4,22 +4,20 @@
   <signature>
     <added>1.7</added>
     <argument name="progressCallbacks">
-      <type name="Function"/>
-      <type name="Array">
+      <type name="TypeOrArray">
         <typeArgument name="Function"/>
       </type>
-      <desc>
-        A function, or array of functions, to be called when the Deferred generates progress notifications.
-      </desc>
+      <desc>A function, or array of functions, to be called when the Deferred generates progress notifications.</desc>
     </argument>
-    <argument name="progressCallbacks" optional="true">
-      <type name="Function"/>
+    <argument name="progressCallbacks" rest="true">
       <type name="Array">
-        <typeArgument name="Function"/>
+        <typeArgument>
+          <type name="TypeOrArray">
+            <typeArgument name="Function"/>
+          </type>
+        </typeArgument>
       </type>
-      <desc>
-        Optional additional functions, or arrays of functions, to be called when the Deferred generates progress notifications.
-      </desc>
+      <desc>Optional additional functions, or arrays of functions, to be called when the Deferred generates progress notifications.</desc>
     </argument>
   </signature>
   <desc> Add handlers to be called when the Deferred object generates progress notifications.</desc>

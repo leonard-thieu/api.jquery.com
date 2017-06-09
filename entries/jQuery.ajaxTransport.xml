@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.ajaxTransport" return="undefined">
+<entry type="method" name="jQuery.ajaxTransport" return="void">
   <title>jQuery.ajaxTransport()</title>
   <desc>Creates an object that handles the actual transmission of Ajax data.</desc>
   <signature>
@@ -9,9 +9,10 @@
     </argument>
     <argument name="handler" type="Function">
       <desc>A handler to return the new transport object to use with the data type provided in the first argument.</desc>
-      <argument name="options" type="PlainObject" />
-      <argument name="originalOptions" type="PlainObject" />
+      <argument name="options" type="AjaxSettings" />
+      <argument name="originalOptions" type="AjaxSettings" />
       <argument name="jqXHR" type="jqXHR" />
+      <return type="Transport"/>
     </argument>
   </signature>
   <longdesc>

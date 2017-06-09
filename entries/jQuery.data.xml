@@ -1,17 +1,19 @@
 <?xml version="1.0"?>
 <entries>
   <desc>Store arbitrary data associated with the specified element and/or return the value that was set.</desc>
-  <entry type="method" name="jQuery.data" return="Object">
+  <entry type="method" name="jQuery.data" return="T">
     <title>jQuery.data()</title>
     <signature>
       <added>1.2.3</added>
+      <typeParameter name="T"/>
       <argument name="element" type="Element">
         <desc>The DOM element to associate with the data.</desc>
       </argument>
       <argument name="key" type="String">
         <desc>A string naming the piece of data to set.</desc>
       </argument>
-      <argument name="value" type="Anything">
+      <argument name="value">
+        <typeArgument name="T"/>
         <desc>The new data value; this can be any Javascript type except <code>undefined</code>.</desc>
       </argument>
     </signature>
@@ -60,21 +62,17 @@ $( "span:last" ).text( jQuery.data( div, "test" ).last );
     <category slug="version/1.4"/>
     <category slug="version/1.4.3"/>
   </entry>
-  <entry type="method" name="jQuery.data" return="Object">
+  <entry type="method" name="jQuery.data" return="Anything">
     <signature>
       <added>1.2.3</added>
-      <argument name="element" type="Element">
-        <desc>The DOM element to query for the data.</desc>
-      </argument>
-      <argument name="key" type="String">
-        <desc>Name of the data stored.</desc>
-      </argument>
-    </signature>
-    <signature>
       <added>1.4</added>
       <argument name="element" type="Element">
         <desc>The DOM element to query for the data.</desc>
       </argument>
+      <argument name="key" type="String" optional="true">
+        <desc>Name of the data stored.</desc>
+      </argument>
+      <argument name="value" type="undefined" optional="true"/>
     </signature>
     <desc>Returns value at named data store for the element, as set by <code>jQuery.data(element, name, value)</code>, or the full data store for the element.</desc>
     <longdesc>

@@ -1,27 +1,49 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.map" return="Array">
+<entry type="method" name="jQuery.map">
   <title>jQuery.map()</title>
+  <return>
+    <type name="Array">
+      <typeArgument name="R"/>
+    </type>
+  </return>
   <signature>
     <added>1.0</added>
-    <argument name="array" type="Array">
+    <typeParameter name="T"/>
+    <typeParameter name="R"/>
+    <argument name="array">
+      <type name="Array">
+        <typeArgument name="T"/>
+      </type>
       <desc>The Array to translate.</desc>
     </argument>
     <argument name="callback" type="Function">
-      <argument name="elementOfArray" type="Object" />
+      <argument name="this" type="Window" />
+      <argument name="elementOfArray">
+        <typeArgument name="T"/>
+      </argument>
       <argument name="indexInArray" type="Integer" />
-      <return type="Object" />      
+      <return type="R" />
       <desc>The function to process each item against.  The first argument to the function is the array item, the second argument is the index in array The function can return any value. A returned array will be flattened into the resulting array. Within the function, <code>this</code> refers to the global (window) object.</desc>
     </argument>
   </signature>
   <signature>
     <added>1.6</added>
-    <argument name="object" type="Object">
+    <typeParameter name="T"/>
+    <typeParameter name="K extends keyof T"/>
+    <typeParameter name="R"/>
+    <argument name="object">
+      <typeArgument name="T"/>
       <desc>The Object to translate.</desc>
     </argument>
     <argument name="callback" type="Function">
-      <argument name="propertyOfObject" type="Object" />
-      <argument name="key" type="String" />
-      <return type="Object" />            
+      <argument name="this" type="Window" />
+      <argument name="propertyOfObject">
+        <typeArgument name="T[K]"/>
+      </argument>
+      <argument name="key">
+        <typeArgument name="K"/>
+      </argument>
+      <return type="R" />
       <desc>The function to process each item against.  The first argument to the function is the value; the second argument is the key of the object property. The function can return any value to add to the array. A returned array will be flattened into the resulting array. Within the function, <code>this</code> refers to the global (window) object. </desc>
     </argument>
   </signature>

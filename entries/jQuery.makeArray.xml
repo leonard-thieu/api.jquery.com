@@ -10,7 +10,7 @@
     <added>1.2</added>
     <typeParameter name="T"/>
     <argument name="obj">
-      <type name="ArrayLike">
+      <type name="ArrayLikeObject">
         <typeArgument name="T"/>
       </type>
       <desc>Any object to turn into a native Array.</desc>

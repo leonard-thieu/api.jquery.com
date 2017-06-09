@@ -16,7 +16,10 @@
     <argument name="properties" type="PlainObject">
       <desc>An object of CSS properties and values that the animation will move toward.</desc>
     </argument>
-    <xi:include href="../includes/options-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <argument name="options">
+      <type name="EffectsOptions"/>
+      <desc>A map of additional options to pass to the method.</desc>
+    </argument>
   </signature>
 
   <longdesc>

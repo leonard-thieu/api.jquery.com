@@ -4,17 +4,13 @@
   <signature>
     <added>1.7</added>
     <argument name="context" type="Object">
-      <desc>
-        Context passed to the progressCallbacks as the <code>this</code> object.
-      </desc>
+      <desc>Context passed to the progressCallbacks as the <code>this</code> object.</desc>
     </argument>
-    <argument name="args" optional="true">
+    <argument name="args" rest="true">
       <type name="Array">
-        <typeArgument name="any"/>
+        <typeArgument name="Anything"/>
       </type>
-      <desc>
-        An optional array of arguments that are passed to the progressCallbacks.
-      </desc>
+      <desc>An optional array of arguments that are passed to the progressCallbacks.</desc>
     </argument>
   </signature>
   <desc> Call the progressCallbacks on a Deferred object with the given context and <code>args</code>. </desc>

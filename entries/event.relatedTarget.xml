@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
-<entry type="property" name="event.relatedTarget" return="Element">
+<entry type="property" name="event.relatedTarget">
+  <return>
+    <type name="Element"/>
+    <type name="Null"/>
+  </return>
   <title>event.relatedTarget</title>
   <signature>
     <added>1.1.4</added>

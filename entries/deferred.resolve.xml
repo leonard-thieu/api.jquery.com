@@ -3,7 +3,10 @@
   <title>deferred.resolve()</title>
   <signature>
     <added>1.5</added>
-    <argument name="args" type="Anything" optional="true">
+    <argument name="args" rest="true">
+      <type name="Array">
+        <typeArgument name="Anything"/>
+      </type>
       <desc>
         Optional arguments that are passed to the doneCallbacks.
       </desc>

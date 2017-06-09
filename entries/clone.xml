@@ -3,11 +3,6 @@
   <title>.clone()</title>
   <signature>
     <added>1.0</added>
-    <argument name="withDataAndEvents" optional="true" type="Boolean" default="false">
-      <desc>A Boolean indicating whether event handlers should be copied along with the elements. As of jQuery 1.4, element data will be copied as well.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.5</added>
     <argument name="withDataAndEvents" optional="true" type="Boolean" default="false">
       <desc>A Boolean indicating whether event handlers and data should be copied along with the elements. The default value is <code>false</code>. <em>*In jQuery 1.5.0 the default value was incorrectly <code>true</code>; it was changed back to <code>false</code> in 1.5.1 and up.</em></desc>

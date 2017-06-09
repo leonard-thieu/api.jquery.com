@@ -1,12 +1,15 @@
 <?xml version="1.0"?>
-<entry name="deferred.catch" type="method" return="Promise">
+<entry name="deferred.catch" type="method">
+    <return>
+        <type name="Promise">
+            <typeArgument name="T"/>
+        </type>
+    </return>
     <title>deferred.catch()</title>
     <signature>
         <added>3.0</added>
         <argument name="failFilter" type="Function">
-            <desc>
-                A function that is called when the Deferred is rejected.
-            </desc>
+            <desc>A function that is called when the Deferred is rejected.</desc>
         </argument>
     </signature>
     <desc>Add handlers to be called when the Deferred object is rejected. </desc>

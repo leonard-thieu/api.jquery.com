@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
-<entry type="property" name="jQuery.cssNumber" return="Object">
+<entry type="property" name="jQuery.cssNumber">
+  <return>
+    <type name="PlainObject">
+      <typeArgument name="Boolean"/>
+    </type>
+  </return>
   <title>jQuery.cssNumber</title>
   <signature>
     <added>1.4.3</added>

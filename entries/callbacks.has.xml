@@ -3,7 +3,8 @@
   <title>callbacks.has()</title>
   <signature>
     <added>1.7</added>
-    <argument name="callback" type="Function" optional="true">
+    <argument name="callback" optional="true">
+      <type name="Function"/>
       <desc>The callback to search for.</desc>
     </argument>
   </signature>

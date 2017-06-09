@@ -4,20 +4,11 @@
   <desc>Execute all handlers and behaviors attached to the matched elements for the given event type.</desc>
   <signature>
     <added>1.0</added>
-    <argument name="eventType" type="String">
-      <desc>A string containing a JavaScript event type, such as <code>click</code> or <code>submit</code>.</desc>
-    </argument>
-    <argument name="extraParameters" optional="true">
-      <type name="Array">
-        <typeArgument name="any"/>
-      </type>
-      <type name="PlainObject"/>
-      <desc>Additional parameters to pass along to the event handler.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.3</added>
-    <argument name="event" type="Event">
+    <argument name="eventType">
+      <type name="String"/>
+      <desc>A string containing a JavaScript event type, such as <code>click</code> or <code>submit</code>.</desc>
+      <type name="Event"/>
       <desc>A <a href="/category/events/event-object/"><code>jQuery.Event</code></a> object.</desc>
     </argument>
     <argument name="extraParameters" optional="true">
@@ -25,6 +16,8 @@
         <typeArgument name="any"/>
       </type>
       <type name="PlainObject"/>
+      <type name="String"/>
+      <type name="Number"/>
       <desc>Additional parameters to pass along to the event handler.</desc>
     </argument>
   </signature>

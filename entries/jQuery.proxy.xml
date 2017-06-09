@@ -7,7 +7,7 @@
     <argument name="function" type="Function">
       <desc>The function whose context will be changed.</desc>
     </argument>
-    <argument name="context" type="PlainObject">
+    <argument name="context" type="Object">
       <desc>The object to which the context (<code>this</code>) of the function should be set.</desc>
     </argument>
     <argument name="additionalArguments" optional="true" rest="true">
@@ -20,10 +20,13 @@
   <signature>
     <added>1.4</added>
     <added>1.6</added>
-    <argument name="context" type="PlainObject">
+    <typeParameter name="T"/>
+    <argument name="context">
+      <typeArgument name="T"/>
       <desc>The object to which the context of the function should be set.</desc>
     </argument>
-    <argument name="name" type="String">
+    <argument name="name">
+      <typeArgument name="keyof T"/>
       <desc>The name of the function whose context will be changed (should be a property of the <code>context</code> object).</desc>
     </argument>
     <argument name="additionalArguments" optional="true" rest="true">

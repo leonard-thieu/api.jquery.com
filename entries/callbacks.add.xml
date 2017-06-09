@@ -5,9 +5,10 @@
     <added>1.7</added>
     <argument name="callbacks">
       <desc>A function, or array of functions, that are to be added to the callback list.</desc>
-      <type name="Function"/>
-      <type name="Array">
-        <typeArgument name="Function"/>
+      <type name="TypeOrArray">
+        <typeArgument>
+          <type name="Function"/>
+        </typeArgument>
       </type>
     </argument>
   </signature>

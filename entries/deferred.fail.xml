@@ -3,15 +3,21 @@
   <title>deferred.fail()</title>
   <signature>
     <added>1.5</added>
-    <argument name="failCallbacks" type="Function">
-      <desc>
-        A function, or array of functions, that are called when the Deferred is rejected.
-      </desc>
+    <argument name="failCallbacks">
+      <type name="TypeOrArray">
+        <typeArgument name="Function"/>
+      </type>
+      <desc>A function, or array of functions, that are called when the Deferred is rejected.</desc>
     </argument>
-    <argument name="failCallbacks" type="Function" optional="true">
-      <desc>
-        Optional additional functions, or arrays of functions, that are called when the Deferred is rejected.
-      </desc>
+    <argument name="failCallbacks" rest="true">
+      <type name="Array">
+        <typeArgument>
+          <type name="TypeOrArray">
+            <typeArgument name="Function"/>
+          </type>
+        </typeArgument>
+      </type>
+      <desc>Optional additional functions, or arrays of functions, that are called when the Deferred is rejected.</desc>
     </argument>
   </signature>
   <desc> Add handlers to be called when the Deferred object is rejected. </desc>

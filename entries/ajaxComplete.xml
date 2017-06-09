@@ -6,7 +6,7 @@
     <argument name="handler" type="Function">      
       <argument name="event" type="Event" />
       <argument name="jqXHR" type="jqXHR" />
-      <argument name="ajaxOptions" type="PlainObject" />
+      <argument name="ajaxOptions" type="AjaxSettings" />
       <desc>The function to be invoked.</desc>
     </argument>
   </signature>

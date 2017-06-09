@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
-<entry type="property" name="jQuery.ready" return="Thenable">
+<entry type="property" name="jQuery.ready">
+  <return>
+    <type name="Thenable">
+      <typeArgument name="jQueryStatic"/>
+    </type>
+  </return>
   <title>jQuery.ready</title>
   <desc>A Promise-like object (or "thenable") that resolves when the document is ready.</desc>
   <signature>

@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.ajaxSetup" return="">
+<entry type="method" name="jQuery.ajaxSetup" return="AjaxSettings">
   <title>jQuery.ajaxSetup()</title>
   <signature>
     <added>1.1</added>
-    <argument name="options" type="PlainObject">
+    <argument name="options" type="AjaxSettings">
       <desc>A set of key/value pairs that configure the default Ajax request. All options are optional. </desc>
     </argument>
   </signature>
