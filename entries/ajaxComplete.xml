@@ -7,6 +7,10 @@
       <argument name="event" type="Event" />
       <argument name="jqXHR" type="jqXHR" />
       <argument name="ajaxOptions" type="AjaxSettings" />
+      <return>
+        <type name="void"/>
+        <type name="false"/>
+      </return>
       <desc>The function to be invoked.</desc>
     </argument>
   </signature>

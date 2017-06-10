@@ -3,11 +3,15 @@
   <title>.show()</title>
   <desc>Display the matched elements.</desc>
   <signature>
+    <added>1.4.3</added>
+    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+    <xi:include href="../includes/easing-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+  </signature>
+  <signature>
     <added>1.0</added>
-    <argument name="options" optional="true">
-      <type name="EffectsOptions"/>
-      <desc>A map of additional options to pass to the method.</desc>
-    </argument>
+    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <signature>
     <added>1.0</added>
@@ -15,14 +19,10 @@
   </signature>
   <signature>
     <added>1.0</added>
-    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
-    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-  </signature>
-  <signature>
-    <added>1.4.3</added>
-    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
-    <xi:include href="../includes/easing-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
-    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <argument name="options" optional="true">
+      <type name="EffectsOptions"/>
+      <desc>A map of additional options to pass to the method.</desc>
+    </argument>
   </signature>
 
   <longdesc>

@@ -78,7 +78,13 @@ showIt();
         <type name="TypeOrArray">
           <typeArgument>
             <type name="Function">
-              <argument name="next" type="Function" />
+              <argument name="this" type="Element" />
+              <argument name="next">
+                <type name="Function">
+                  <return type="void"/>
+                </type>
+              </argument>
+              <return type="void"/>
             </type>
           </typeArgument>
         </type>
@@ -92,7 +98,13 @@ showIt();
         <type name="TypeOrArray">
           <typeArgument>
             <type name="Function">
-              <argument name="next" type="Function" />
+              <argument name="this" type="Element" />
+              <argument name="next">
+                <type name="Function">
+                  <return type="void"/>
+                </type>
+              </argument>
+              <return type="void"/>
             </type>
           </typeArgument>
         </type>

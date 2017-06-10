@@ -7,8 +7,8 @@
     <argument name="properties" type="PlainObject">
       <desc>An object of CSS properties and values that the animation will move toward.</desc>
     </argument>
-    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-    <xi:include href="../includes/easing-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+    <xi:include href="../includes/easing-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
     <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <signature>
@@ -16,7 +16,30 @@
     <argument name="properties" type="PlainObject">
       <desc>An object of CSS properties and values that the animation will move toward.</desc>
     </argument>
-    <argument name="options">
+    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+  </signature>
+  <signature>
+    <added>1.0</added>
+    <argument name="properties" type="PlainObject">
+      <desc>An object of CSS properties and values that the animation will move toward.</desc>
+    </argument>
+    <xi:include href="../includes/easing-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+  </signature>
+  <signature>
+    <added>1.0</added>
+    <argument name="properties" type="PlainObject">
+      <desc>An object of CSS properties and values that the animation will move toward.</desc>
+    </argument>
+    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+  </signature>
+  <signature>
+    <added>1.0</added>
+    <argument name="properties" type="PlainObject">
+      <desc>An object of CSS properties and values that the animation will move toward.</desc>
+    </argument>
+    <argument name="options" optional="true">
       <type name="EffectsOptions"/>
       <desc>A map of additional options to pass to the method.</desc>
     </argument>

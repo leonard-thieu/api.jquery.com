@@ -8,7 +8,11 @@
       <argument name="event" type="Event" />
       <argument name="jqXHR" type="jqXHR" />
       <argument name="ajaxOptions" type="AjaxSettings" />
-      <argument name="data" type="PlainObject" />  
+      <argument name="data" type="PlainObject" />
+      <return>
+        <type name="void"/>
+        <type name="false"/>
+      </return>
     </argument>
   </signature>
   <desc>Attach a function to be executed whenever an Ajax request completes successfully. This is an <a href="/Ajax_Events/">Ajax Event</a>.</desc>

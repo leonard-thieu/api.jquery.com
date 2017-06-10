@@ -14,7 +14,8 @@
     <argument name="success" optional="true" type="Function">
       <argument name="data" type="PlainObject" />
       <argument name="textStatus" type="String"/>
-      <argument name="jqXHR" type="jqXHR"/>      
+      <argument name="jqXHR" type="jqXHR"/>
+      <return type="void"/>
       <desc>A callback function that is executed if the request succeeds.</desc>
     </argument>
   </signature>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<entry type="method" name="jQuery.holdReady" return="undefined">
+<entry type="method" name="jQuery.holdReady" return="void">
   <title>jQuery.holdReady()</title>
   <desc>Holds or releases the execution of jQuery's ready event.</desc>
   <signature>

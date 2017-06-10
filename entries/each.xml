@@ -7,7 +7,11 @@
       <desc>A function to execute for each matched element.</desc>
       <argument name="this" type="Element" />
       <argument name="index" type="Integer" />
-      <argument name="element" type="Element" />      
+      <argument name="element" type="Element" />
+      <return>
+        <type name="void"/>
+        <type name="false"/>
+      </return>
     </argument>
   </signature>
   <desc>Iterate over a jQuery object, executing a function for each matched element. </desc>

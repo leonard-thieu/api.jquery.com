@@ -8,7 +8,11 @@
       <argument name="event" type="Event" />
       <argument name="jqXHR" type="jqXHR" />
       <argument name="ajaxSettings" type="AjaxSettings" />
-      <argument name="thrownError" type="String" />   
+      <argument name="thrownError" type="String" />
+      <return>
+        <type name="void"/>
+        <type name="false"/>
+      </return>
     </argument>
   </signature>
   <desc>Register a handler to be called when Ajax requests complete with an error. This is an <a href="/Ajax_Events/">Ajax Event</a>.</desc>

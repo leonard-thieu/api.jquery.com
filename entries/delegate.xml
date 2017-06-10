@@ -32,7 +32,10 @@
     <argument name="selector" type="String">
       <desc>A selector to filter the elements that trigger the event.</desc>
     </argument>
-    <argument name="events" type="PlainObject">
+    <argument name="events">
+      <type name="PlainObject">
+        <typeArgument name="EventHandler"/>
+      </type>
       <desc>A plain object of one or more event types and functions to execute for them.</desc>
     </argument>
   </signature>

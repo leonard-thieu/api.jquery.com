@@ -8,6 +8,10 @@
       <argument name="event" type="Event" />
       <argument name="jqXHR" type="jqXHR" />
       <argument name="ajaxOptions" type="AjaxSettings" />
+      <return>
+        <type name="void"/>
+        <type name="false"/>
+      </return>
     </argument>
   </signature>
   <desc>Attach a function to be executed before an Ajax request is sent. This is an <a href="/Ajax_Events/">Ajax Event</a>.</desc>

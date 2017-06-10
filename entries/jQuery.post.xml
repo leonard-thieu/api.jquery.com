@@ -16,6 +16,7 @@
         <argument name="data" type="PlainObject" />
         <argument name="textStatus" type="String"/>
         <argument name="jqXHR" type="jqXHR"/>
+        <return type="void"/>
       </type>
       <type name="Null"/>
       <desc>A callback function that is executed if the request succeeds. Required if <code>dataType</code> is provided, but can be <code>null</code> in that case.</desc>

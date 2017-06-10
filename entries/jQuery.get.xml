@@ -11,10 +11,14 @@
       <type name="String"/>
       <desc>A plain object or string that is sent to the server with the request.</desc>
     </argument>
-    <argument name="success" optional="true" type="Function">
-      <argument name="data" type="PlainObject" />
-      <argument name="textStatus" type="String"/>
-      <argument name="jqXHR" type="jqXHR"/>
+    <argument name="success" optional="true">
+      <type name="Function">
+        <argument name="data" type="PlainObject" />
+        <argument name="textStatus" type="String"/>
+        <argument name="jqXHR" type="jqXHR"/>
+        <return type="void"/>
+      </type>
+      <type name="null"/>
       <desc>A callback function that is executed if the request succeeds. Required if <code>dataType</code> is provided, but you can use <code>null</code> or <a href="/jQuery.noop/"><code>jQuery.noop</code></a> as a placeholder.</desc>
     </argument>
     <argument name="dataType" optional="true" type="String">

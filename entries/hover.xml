@@ -8,11 +8,19 @@
     <argument name="handlerInOut" type="Function">
       <argument name="this" type="Element" />
       <argument name="eventObject" type="Event" />
+      <return>
+        <type name="void"/>
+        <type name="false"/>
+      </return>
       <desc>A function to execute when the mouse pointer enters or leaves the element.</desc>
     </argument>
     <argument name="handlerOut" type="Function">
       <argument name="this" type="Element" />
       <argument name="eventObject" type="Event" />
+      <return>
+        <type name="void"/>
+        <type name="false"/>
+      </return>
       <desc>A function to execute when the mouse pointer leaves the element.</desc>
     </argument>
   </signature>

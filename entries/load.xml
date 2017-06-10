@@ -12,9 +12,11 @@
       <desc>A plain object or string that is sent to the server with the request.</desc>
     </argument>
     <argument name="complete" type="Function" optional="true">
+      <argument name="this" type="Element" />
       <argument name="responseText" type="String" />
       <argument name="textStatus" type="String"/>
-      <argument name="jqXHR" type="jqXHR"/>       
+      <argument name="jqXHR" type="jqXHR"/>
+      <return type="void"/>
       <desc>A callback function that is executed when the request completes.</desc>
     </argument>
   </signature>

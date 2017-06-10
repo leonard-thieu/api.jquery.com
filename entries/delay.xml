@@ -3,7 +3,7 @@
   <title>.delay()</title>
   <signature>
     <added>1.4</added>
-    <argument name="duration" type="Integer">
+    <argument name="duration" type="Duration">
       <desc>An integer indicating the number of milliseconds to delay execution of the next item in the queue.</desc>
     </argument>
     <argument name="queueName" optional="true" type="String">

@@ -3,35 +3,21 @@
   <title>.fadeTo()</title>
   <desc>Adjust the opacity of the matched elements.</desc>
   <signature>
-    <added>1.0</added>
-    <argument name="duration">
-      <desc>A string or number determining how long the animation will run.</desc>
-      <type name="String"/>
-      <type name="Number"/>
-    </argument>
+    <added>1.4.3</added>
+    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
     <argument name="opacity" type="Number">
       <desc>A number between 0 and 1 denoting the target opacity.</desc>
     </argument>
-    <argument name="complete" type="Function" optional="true">
-      <desc>A function to call once the animation is complete.</desc>
-    </argument>
+    <xi:include href="../includes/easing-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <signature>
-    <added>1.4.3</added>
-    <argument name="duration">
-      <desc>A string or number determining how long the animation will run.</desc>
-      <type name="String"/>
-      <type name="Number"/>
-    </argument>
+    <added>1.0</added>
+    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
     <argument name="opacity" type="Number">
       <desc>A number between 0 and 1 denoting the target opacity.</desc>
     </argument>
-    <argument name="easing" type="String" optional="true">
-      <desc>A string indicating which easing function to use for the transition.</desc>
-    </argument>
-    <argument name="complete" type="Function" optional="true">
-      <desc>A function to call once the animation is complete.</desc>
-    </argument>
+    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <longdesc>
     <p>The <code>.fadeTo()</code> method animates the opacity of the matched elements. It is similar to the <code><a href="/fadeIn/">.fadeIn()</a></code> method but that method unhides the element and always fades to 100% opacity.</p>

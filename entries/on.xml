@@ -31,6 +31,10 @@
             <typeArgument name="Anything"/>
           </type>
         </argument>
+        <return>
+          <type name="void"/>
+          <type name="false"/>
+        </return>
       </type>
       <type name="false"/>
     </argument>
@@ -55,6 +59,10 @@
             <typeArgument name="Anything"/>
           </type>
         </argument>
+        <return>
+          <type name="void"/>
+          <type name="false"/>
+        </return>
       </type>
       <type name="false"/>
     </argument>
@@ -83,6 +91,10 @@
             <typeArgument name="Anything"/>
           </type>
         </argument>
+        <return>
+          <type name="void"/>
+          <type name="false"/>
+        </return>
       </type>
       <type name="false"/>
     </argument>
@@ -102,6 +114,10 @@
             <typeArgument name="Anything"/>
           </type>
         </argument>
+        <return>
+          <type name="void"/>
+          <type name="false"/>
+        </return>
       </type>
       <type name="false"/>
     </argument>
