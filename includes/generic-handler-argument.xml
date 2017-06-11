@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<argument name="handler">
+  <type name="EventHandler">
+    <typeArgument name="TData"/>
+  </type>
+  <desc>A function to execute each time the event is triggered.</desc>
+</argument>

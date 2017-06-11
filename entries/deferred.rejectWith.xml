@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<entry name="deferred.rejectWith" type="method" return="Deferred">
+<entry name="deferred.rejectWith" type="method" return="this">
   <title>deferred.rejectWith()</title>
   <signature>
     <added>1.5</added>

@@ -7,26 +7,6 @@
     </type>
   </return>
   <signature>
-    <added>1.0</added>
-    <typeParameter name="T"/>
-    <typeParameter name="R"/>
-    <argument name="array">
-      <type name="Array">
-        <typeArgument name="T"/>
-      </type>
-      <desc>The Array to translate.</desc>
-    </argument>
-    <argument name="callback" type="Function">
-      <argument name="this" type="Window" />
-      <argument name="elementOfArray">
-        <typeArgument name="T"/>
-      </argument>
-      <argument name="indexInArray" type="Integer" />
-      <return type="R" />
-      <desc>The function to process each item against.  The first argument to the function is the array item, the second argument is the index in array The function can return any value. A returned array will be flattened into the resulting array. Within the function, <code>this</code> refers to the global (window) object.</desc>
-    </argument>
-  </signature>
-  <signature>
     <added>1.6</added>
     <typeParameter name="T"/>
     <typeParameter name="K extends keyof T"/>
@@ -45,6 +25,26 @@
       </argument>
       <return type="R" />
       <desc>The function to process each item against.  The first argument to the function is the value; the second argument is the key of the object property. The function can return any value to add to the array. A returned array will be flattened into the resulting array. Within the function, <code>this</code> refers to the global (window) object. </desc>
+    </argument>
+  </signature>
+  <signature>
+    <added>1.0</added>
+    <typeParameter name="T"/>
+    <typeParameter name="R"/>
+    <argument name="array">
+      <type name="Array">
+        <typeArgument name="T"/>
+      </type>
+      <desc>The Array to translate.</desc>
+    </argument>
+    <argument name="callback" type="Function">
+      <argument name="this" type="Window" />
+      <argument name="elementOfArray">
+        <typeArgument name="T"/>
+      </argument>
+      <argument name="indexInArray" type="Integer" />
+      <return type="R" />
+      <desc>The function to process each item against.  The first argument to the function is the array item, the second argument is the index in array The function can return any value. A returned array will be flattened into the resulting array. Within the function, <code>this</code> refers to the global (window) object.</desc>
     </argument>
   </signature>
   <desc>Translate all items in an array or object to new array of items.</desc>

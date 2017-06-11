@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<entry name="deferred.notifyWith" type="method" return="Deferred">
+<entry name="deferred.notifyWith" type="method" return="this">
   <title>deferred.notifyWith()</title>
   <signature>
     <added>1.7</added>

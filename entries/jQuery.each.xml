@@ -2,21 +2,23 @@
 <entries>
   <entry type="method" name="jQuery.each">
     <return>
-      <typeArgument name="TArray"/>
+      <typeArgument name="T"/>
     </return>
     <title>jQuery.each()</title>
     <signature>
       <added>1.0</added>
       <typeParameter name="T"/>
-      <typeParameter name="TArray extends jQuery.ArrayLikeObject<T>"/>
-      <argument name="array">
-        <typeArgument name="TArray"/>
-        <desc>The array to iterate over.</desc>
+      <typeParameter name="K extends keyof T"/>
+      <argument name="object">
+        <typeArgument name="T"/>
+        <desc>The object to iterate over.</desc>
       </argument>
       <argument name="callback" type="Function">
-        <argument name="indexInArray" type="Integer" />
-        <argument name="value">
-          <typeArgument name="T"/>
+        <argument name="propertyName">
+          <typeArgument name="K"/>
+        </argument>
+        <argument name="valueOfProperty">
+          <typeArgument name="T[K]"/>
         </argument>
         <return>
           <type name="false"/>
@@ -112,23 +114,24 @@ $.each({ name: "John", lang: "JS" }, function( k, v ) {
   </entry>
   <entry type="method" name="jQuery.each">
     <return>
-      <typeArgument name="T"/>
+      <type name="ArrayLikeObject">
+        <typeArgument name="T"/>
+      </type>
     </return>
     <title>jQuery.each()</title>
     <signature>
       <added>1.0</added>
       <typeParameter name="T"/>
-      <typeParameter name="K extends keyof T"/>
-      <argument name="object">
-        <typeArgument name="T"/>
-        <desc>The object to iterate over.</desc>
+      <argument name="array">
+        <type name="ArrayLikeObject">
+          <typeArgument name="T"/>
+        </type>
+        <desc>The array to iterate over.</desc>
       </argument>
       <argument name="callback" type="Function">
-        <argument name="propertyName">
-          <typeArgument name="K"/>
-        </argument>
-        <argument name="valueOfProperty">
-          <typeArgument name="T[K]"/>
+        <argument name="indexInArray" type="Integer" />
+        <argument name="value">
+          <typeArgument name="T"/>
         </argument>
         <return>
           <type name="false"/>

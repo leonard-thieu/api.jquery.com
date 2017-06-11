@@ -1,11 +1,15 @@
 <?xml version="1.0"?>
-<entry name="deferred.always" type="method" return="Deferred">
+<entry name="deferred.always" type="method" return="this">
   <title>deferred.always()</title>
   <signature>
     <added>1.6</added>
-    <argument name="alwaysCallbacks">
+    <argument name="alwaysCallback">
       <type name="TypeOrArray">
-        <typeArgument name="Function"/>
+        <typeArgument>
+          <type name="PromiseCallback">
+            <typeArgument name="TContext"/>
+          </type>
+        </typeArgument>
       </type>
       <desc>A function, or array of functions, that is called when the Deferred is resolved or rejected.</desc>
     </argument>
@@ -13,7 +17,11 @@
       <type name="Array">
         <typeArgument>
           <type name="TypeOrArray">
-            <typeArgument name="Function"/>
+            <typeArgument>
+              <type name="PromiseCallback">
+                <typeArgument name="TContext"/>
+              </type>
+            </typeArgument>
           </type>
         </typeArgument>
       </type>

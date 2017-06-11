@@ -6,12 +6,12 @@
     <argument name="url" type="String">
       <desc>A string containing the URL to which the request is sent.</desc>
     </argument>
-    <argument name="data" optional="true">
+    <argument name="data">
       <type name="PlainObject"/>
       <type name="String"/>
       <desc>A plain object or string that is sent to the server with the request.</desc>
     </argument>
-    <argument name="success" optional="true">
+    <argument name="success">
       <type name="Function">
         <argument name="data" type="PlainObject" />
         <argument name="textStatus" type="String"/>
@@ -21,13 +21,55 @@
       <type name="null"/>
       <desc>A callback function that is executed if the request succeeds. Required if <code>dataType</code> is provided, but you can use <code>null</code> or <a href="/jQuery.noop/"><code>jQuery.noop</code></a> as a placeholder.</desc>
     </argument>
-    <argument name="dataType" optional="true" type="String">
+    <argument name="dataType" type="String" optional="true">
       <desc>The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).</desc>
     </argument>
   </signature>
   <signature>
-    <added>1.12/2.2</added>
-    <argument name="settings" type="AjaxSettings" optional="false">
+    <added>1.0</added>
+    <argument name="url" type="String">
+      <desc>A string containing the URL to which the request is sent.</desc>
+    </argument>
+    <argument name="success">
+      <type name="Function">
+        <argument name="data" type="PlainObject" />
+        <argument name="textStatus" type="String"/>
+        <argument name="jqXHR" type="jqXHR"/>
+        <return type="void"/>
+      </type>
+      <type name="null"/>
+      <desc>A callback function that is executed if the request succeeds. Required if <code>dataType</code> is provided, but you can use <code>null</code> or <a href="/jQuery.noop/"><code>jQuery.noop</code></a> as a placeholder.</desc>
+    </argument>
+    <argument name="dataType" type="String">
+      <desc>The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).</desc>
+    </argument>
+  </signature>
+  <signature>
+    <added>1.0</added>
+    <argument name="url" type="String">
+      <desc>A string containing the URL to which the request is sent.</desc>
+    </argument>
+    <argument name="success_data">
+      <type name="Function">
+        <argument name="data" type="PlainObject" />
+        <argument name="textStatus" type="String"/>
+        <argument name="jqXHR" type="jqXHR"/>
+        <return type="void"/>
+      </type>
+      <desc>A callback function that is executed if the request succeeds. Required if <code>dataType</code> is provided, but you can use <code>null</code> or <a href="/jQuery.noop/"><code>jQuery.noop</code></a> as a placeholder.</desc>
+      <type name="PlainObject"/>
+      <type name="String"/>
+      <desc>A plain object or string that is sent to the server with the request.</desc>
+    </argument>
+  </signature>
+  <signature>
+    <added>1.0</added>
+    <added>1.12</added>
+    <added>2.2</added>
+    <argument name="url_settings" optional="true">
+      <type name="String"/>
+      <desc>A string containing the URL to which the request is sent.</desc>
+      <type name="AjaxSettings"/>
       <desc>A set of key/value pairs that configure the Ajax request. All properties except for <code>url</code> are optional. A default can be set for any option with <a href="/jQuery.ajaxSetup/">$.ajaxSetup()</a>. See <a href="/jquery.ajax/#jQuery-ajax-settings">jQuery.ajax( settings )</a> for a complete list of all settings. The type option will automatically be set to <code>GET</code>.</desc>
     </argument>
   </signature>

@@ -4,7 +4,7 @@
   <signature>
     <added>1.7</added>
     <argument name="context" optional="true">
-      <type name="Anything"/>
+      <type name="Object"/>
       <desc>A reference to the context in which the callbacks in the list should be fired.</desc>
     </argument>
     <argument name="args" optional="true">

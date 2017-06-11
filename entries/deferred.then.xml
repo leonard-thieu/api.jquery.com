@@ -1,25 +1,26 @@
 <?xml version="1.0"?>
-<entry name="deferred.then" type="method">
-  <return>
-    <type name="Promise">
-      <typeArgument name="T"/>
-    </type>
-  </return>
+<entry name="deferred.then" type="method" return="this">
   <title>deferred.then()</title>
   <signature>
     <added>1.8</added>
     <argument name="doneFilter">
-      <type name="Function"/>
+      <type name="PromiseCallback">
+        <typeArgument name="TContext"/>
+      </type>
       <type name="Null"/>
       <desc>A function that is called when the Deferred is resolved.</desc>
     </argument>
     <argument name="failFilter" optional="true">
-      <type name="Function"/>
+      <type name="PromiseCallback">
+        <typeArgument name="TContext"/>
+      </type>
       <type name="Null"/>
       <desc>An optional function that is called when the Deferred is rejected.</desc>
     </argument>
     <argument name="progressFilter" optional="true">
-      <type name="Function"/>
+      <type name="PromiseCallback">
+        <typeArgument name="TContext"/>
+      </type>
       <type name="Null"/>
       <desc>An optional function that is called when progress notifications are sent to the Deferred.</desc>
     </argument>

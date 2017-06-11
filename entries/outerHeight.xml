@@ -53,6 +53,7 @@
         <type name="Number"/>
         <desc>A number representing the number of pixels, or a number along with an optional unit of measure appended (as a string).</desc>
         <type name="Function">
+          <argument name="this" type="Element" />
           <argument name="index" type="Integer" />
           <argument name="height" type="Number" />
           <return>

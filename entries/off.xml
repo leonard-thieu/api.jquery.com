@@ -7,10 +7,22 @@
     <argument name="events" type="String">
       <desc>One or more space-separated event types and optional namespaces, or just namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".</desc>
     </argument>
-    <argument name="selector" type="String" optional="true">
+    <argument name="selector" type="String">
       <desc>A selector which should match the one originally passed to <code>.on()</code> when attaching event handlers.</desc>
     </argument>
-    <xi:include href="../includes/handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="../includes/handler-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+  </signature>
+  <signature>
+    <added>1.7</added>
+    <argument name="events" type="String">
+      <desc>One or more space-separated event types and optional namespaces, or just namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".</desc>
+    </argument>
+    <argument name="selector_handler" optional="true">
+      <type name="String"/>
+      <desc>A selector which should match the one originally passed to <code>.on()</code> when attaching event handlers.</desc>
+      <type name="EventHandler"/>
+      <desc>A function to execute each time the event is triggered.</desc>
+    </argument>
   </signature>
   <signature>
     <added>1.7</added>
@@ -20,14 +32,19 @@
       </type>
       <desc>An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).</desc>
     </argument>
-    <argument name="selector" type="String" optional="true">
+    <argument name="selector" type="String">
       <desc>A selector which should match the one originally passed to <code>.on()</code> when attaching event handlers.</desc>
     </argument>
   </signature>
   <signature>
     <added>1.7</added>
-    <argument name="event" type="Event" optional="true">
+    <argument name="events" optional="true">
+      <type name="Event"/>
       <desc>A <a href="/category/events/event-object/"><code>jQuery.Event</code></a> object.</desc>
+      <type name="PlainObject">
+        <typeArgument name="EventHandler"/>
+      </type>
+      <desc>An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).</desc>
     </argument>
   </signature>
   <longdesc>

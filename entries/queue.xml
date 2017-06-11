@@ -76,17 +76,7 @@ showIt();
       </argument>
       <argument name="newQueue">
         <type name="TypeOrArray">
-          <typeArgument>
-            <type name="Function">
-              <argument name="this" type="Element" />
-              <argument name="next">
-                <type name="Function">
-                  <return type="void"/>
-                </type>
-              </argument>
-              <return type="void"/>
-            </type>
-          </typeArgument>
+          <typeArgument name="QueueFunction"/>
         </type>
         <desc>The new function to add to the queue, with a function to call that will dequeue the next item.</desc>
         <desc>An array of functions to replace the current queue contents.</desc>
@@ -96,17 +86,7 @@ showIt();
       <added>1.2</added>
       <argument name="newQueue">
         <type name="TypeOrArray">
-          <typeArgument>
-            <type name="Function">
-              <argument name="this" type="Element" />
-              <argument name="next">
-                <type name="Function">
-                  <return type="void"/>
-                </type>
-              </argument>
-              <return type="void"/>
-            </type>
-          </typeArgument>
+          <typeArgument name="QueueFunction"/>
         </type>
         <desc>The new function to add to the queue, with a function to call that will dequeue the next item.</desc>
         <desc>An array of functions to replace the current queue contents.</desc>

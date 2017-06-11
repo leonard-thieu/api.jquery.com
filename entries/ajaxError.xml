@@ -5,6 +5,7 @@
     <added>1.0</added>
     <argument name="handler" type="Function">
       <desc>The function to be invoked.</desc>
+      <argument name="this" type="document" />
       <argument name="event" type="Event" />
       <argument name="jqXHR" type="jqXHR" />
       <argument name="ajaxSettings" type="AjaxSettings" />

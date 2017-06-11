@@ -16,7 +16,12 @@
     <argument name="properties" type="PlainObject">
       <desc>An object of CSS properties and values that the animation will move toward.</desc>
     </argument>
-    <xi:include href="../includes/duration-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
+    <argument name="duration_easing">
+      <type name="Duration"/>
+      <desc>A string or number determining how long the animation will run.</desc>
+      <type name="String"/>
+      <desc>A string indicating which easing function to use for the transition.</desc>
+    </argument>
     <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
   </signature>
   <signature>
@@ -24,22 +29,16 @@
     <argument name="properties" type="PlainObject">
       <desc>An object of CSS properties and values that the animation will move toward.</desc>
     </argument>
-    <xi:include href="../includes/easing-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
-    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-  </signature>
-  <signature>
-    <added>1.0</added>
-    <argument name="properties" type="PlainObject">
-      <desc>An object of CSS properties and values that the animation will move toward.</desc>
-    </argument>
-    <xi:include href="../includes/complete-argument.xml" xmlns:xi="http://www.w3.org/2003/XInclude" optional="false"/>
-  </signature>
-  <signature>
-    <added>1.0</added>
-    <argument name="properties" type="PlainObject">
-      <desc>An object of CSS properties and values that the animation will move toward.</desc>
-    </argument>
-    <argument name="options" optional="true">
+    <argument name="duration_easing_complete_options" optional="true">
+      <type name="Duration"/>
+      <desc>A string or number determining how long the animation will run.</desc>
+      <type name="String"/>
+      <desc>A string indicating which easing function to use for the transition.</desc>
+      <type name="Function">
+        <argument name="this" type="Element"/>
+        <return type="void"/>
+      </type>
+      <desc>A function to call once the animation is complete, called once per matched element.</desc>
       <type name="EffectsOptions"/>
       <desc>A map of additional options to pass to the method.</desc>
     </argument>

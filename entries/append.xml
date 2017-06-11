@@ -12,14 +12,18 @@
       </type>
       <type name="jQuery"/>
     </argument>
-    <argument name="content" optional="true">
+    <argument name="contents" rest="true">
       <desc>One or more additional DOM elements, text nodes, arrays of elements and text nodes, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.</desc>
-      <type name="htmlString"/>
-      <type name="TypeOrArray">
-        <typeArgument name="Element"/>
-        <typeArgument name="Text"/>
+      <type name="Array">
+        <typeArgument>
+          <type name="htmlString"/>
+          <type name="TypeOrArray">
+            <typeArgument name="Element"/>
+            <typeArgument name="Text"/>
+          </type>
+          <type name="jQuery"/>
+        </typeArgument>
       </type>
-      <type name="jQuery"/>
     </argument>
   </signature>
   <signature>
@@ -31,8 +35,10 @@
       <argument name="html" type="String" />
       <return>
         <type name="htmlString"/>
-        <type name="Element"/>
-        <type name="Text"/>
+        <type name="TypeOrArray">
+          <typeArgument name="Element"/>
+          <typeArgument name="Text"/>
+        </type>
         <type name="jQuery"/>        
       </return>
     </argument>

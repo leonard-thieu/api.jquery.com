@@ -2,7 +2,7 @@
 <entry type="property" name="jQuery.cssHooks">
   <return>
     <type name="PlainObject">
-      <typeArgument name="Object"/>
+      <typeArgument name="CSSHook"/>
     </type>
   </return>
   <title>jQuery.cssHooks</title>

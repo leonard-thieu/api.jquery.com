@@ -1,30 +1,31 @@
 <?xml version="1.0"?>
-<entry name="deferred.pipe" type="method" deprecated="1.8">
-  <return>
-    <type name="Promise">
-      <typeArgument name="T"/>
-    </type>
-  </return>
+<entry name="deferred.pipe" type="method" deprecated="1.8" return="this">
   <title>deferred.pipe()</title>
   <signature>
     <added>1.6</added>
     <added>1.7</added>
     <argument name="doneFilter" optional="true">
-      <type name="Function"/>
+      <type name="PromiseCallback">
+        <typeArgument name="TContext"/>
+      </type>
       <type name="Null"/>
       <desc>
         An optional function that is called when the Deferred is resolved.
       </desc>
     </argument>
     <argument name="failFilter" optional="true">
-      <type name="Function"/>
+      <type name="PromiseCallback">
+        <typeArgument name="TContext"/>
+      </type>
       <type name="Null"/>
       <desc>
         An optional function that is called when the Deferred is rejected.
       </desc>
     </argument>
     <argument name="progressFilter" optional="true">
-      <type name="Function"/>
+      <type name="PromiseCallback">
+        <typeArgument name="TContext"/>
+      </type>
       <type name="Null"/>
       <desc>
         An optional function that is called when progress notifications are sent to the Deferred.

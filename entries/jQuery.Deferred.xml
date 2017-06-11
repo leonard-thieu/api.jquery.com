@@ -1,17 +1,27 @@
 <?xml version="1.0"?>
-<entry name="jQuery.Deferred" type="method" return="Deferred">
+<entry name="jQuery.Deferred" type="method">
+  <return>
+    <type name="Deferred">
+      <typeArgument name="Window"/>
+    </type>
+  </return>
   <title>jQuery.Deferred()</title>
   <signature>
     <added>1.5</added>
     <argument name="beforeStart" optional="true">
       <type name="Function">
-        <argument name="this" type="Deferred"/>
-        <argument name="deferred" type="Deferred">
+        <argument name="this">
+          <type name="Deferred">
+            <typeArgument name="Window"/>
+          </type>
+        </argument>
+        <argument name="deferred">
+          <type name="Deferred">
+            <typeArgument name="Window"/>
+          </type>
           <desc>The constructed Deferred object.</desc>
         </argument>
-        <return>
-          <type name="void"/>
-        </return>
+        <return type="void"/>
       </type>
       <desc>A function that is called just before the constructor returns.</desc>
     </argument>

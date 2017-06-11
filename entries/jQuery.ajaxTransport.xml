@@ -12,7 +12,10 @@
       <argument name="options" type="AjaxSettings" />
       <argument name="originalOptions" type="AjaxSettings" />
       <argument name="jqXHR" type="jqXHR" />
-      <return type="Transport"/>
+      <return>
+        <type name="Transport"/>
+        <type name="void"/>
+      </return>
     </argument>
   </signature>
   <longdesc>

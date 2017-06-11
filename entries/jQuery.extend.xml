@@ -6,12 +6,6 @@
     <argument name="target" type="Object">
       <desc> An object that will receive the new properties if additional objects are passed in or that will extend the jQuery namespace if it is the sole argument.</desc>
     </argument>
-    <argument name="object1" type="Object" optional="true">
-      <desc>An object containing additional properties to merge in.</desc>
-    </argument>
-    <argument name="objectN" optional="true" type="Object">
-      <desc>Additional objects containing properties to merge in.</desc>
-    </argument>
   </signature>
   <signature>
     <added>1.1.4</added>
@@ -20,12 +14,6 @@
     </argument>
     <argument name="target" type="Object">
       <desc>The object to extend. It will receive the new properties.</desc>
-    </argument>
-    <argument name="object1" type="Object">
-      <desc>An object containing additional properties to merge in.</desc>
-    </argument>
-    <argument name="objectN" optional="true" type="Object">
-      <desc>Additional objects containing properties to merge in.</desc>
     </argument>
   </signature>
   <desc>Merge the contents of two or more objects together into the first object.</desc>

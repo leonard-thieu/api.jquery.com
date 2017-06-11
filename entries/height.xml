@@ -87,6 +87,7 @@ $( "#getw" ).click(function() {
         <type name="Number"/>
         <desc>An integer representing the number of pixels, or an integer with an optional unit of measure appended (as a string).</desc>
         <type name="Function">
+          <argument name="this" type="Element" />
           <argument name="index" type="Integer" />
           <argument name="height" type="Integer" />
           <return>

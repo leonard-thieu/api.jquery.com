@@ -5,6 +5,7 @@
   <signature>
     <added>1.0</added>
     <argument name="handler" type="Function">
+      <argument name="this" type="document" />
       <return>
         <type name="void"/>
         <type name="false"/>

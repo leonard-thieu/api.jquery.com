@@ -6,18 +6,37 @@
     <argument name="url" type="String">
       <desc>A string containing the URL to which the request is sent.</desc>
     </argument>
-    <argument name="data" optional="true">
-      <type name="PlainObject"/>
+    <argument name="data">
       <type name="String"/>
+      <type name="PlainObject"/>
       <desc>A plain object or string that is sent to the server with the request.</desc>
     </argument>
-    <argument name="complete" type="Function" optional="true">
+    <argument name="complete" type="Function">
       <argument name="this" type="Element" />
       <argument name="responseText" type="String" />
       <argument name="textStatus" type="String"/>
       <argument name="jqXHR" type="jqXHR"/>
       <return type="void"/>
       <desc>A callback function that is executed when the request completes.</desc>
+    </argument>
+  </signature>
+  <signature>
+    <added>1.0</added>
+    <argument name="url" type="String">
+      <desc>A string containing the URL to which the request is sent.</desc>
+    </argument>
+    <argument name="complete_data" optional="true">
+      <type name="Function">
+        <argument name="this" type="Element" />
+        <argument name="responseText" type="String" />
+        <argument name="textStatus" type="String"/>
+        <argument name="jqXHR" type="jqXHR"/>
+        <return type="void"/>
+      </type>
+      <desc>A callback function that is executed when the request completes.</desc>
+      <type name="String"/>
+      <type name="PlainObject"/>
+      <desc>A plain object or string that is sent to the server with the request.</desc>
     </argument>
   </signature>
   <desc>Load data from the server and place the returned HTML into the matched element.</desc>

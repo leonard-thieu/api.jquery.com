@@ -59,6 +59,7 @@ $( "p:last" ).html( str );
         <type name="Boolean"/>
         <desc>The text to set as the content of each matched element. When Number or Boolean is supplied, it will be converted to a String representation.</desc>
         <type name="Function">
+          <argument name="this" type="Element" />
           <argument name="index" type="Integer" />
           <argument name="text" type="String" />
           <return>

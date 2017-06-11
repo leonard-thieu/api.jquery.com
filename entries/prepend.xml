@@ -12,25 +12,32 @@
       </type>
       <type name="jQuery"/>
     </argument>
-    <argument name="content" optional="true">
-      <type name="htmlString"/>
-      <type name="TypeOrArray">
-        <typeArgument name="Element"/>
-        <typeArgument name="Text"/>
+    <argument name="contents" rest="true">
+      <type name="Array">
+        <typeArgument>
+          <type name="htmlString"/>
+          <type name="TypeOrArray">
+            <typeArgument name="Element"/>
+            <typeArgument name="Text"/>
+          </type>
+          <type name="jQuery"/>
+        </typeArgument>
       </type>
-      <type name="jQuery"/>
       <desc>One or more additional DOM elements, text nodes, arrays of elements and text nodes, HTML strings, or jQuery objects to insert at the beginning of each element in the set of matched elements.</desc>
     </argument>
   </signature>
   <signature>
     <added>1.4</added>
     <argument name="function" type="Function">
+      <argument name="this" type="Element" />
       <argument name="elementOfArray" type="Integer" />
       <argument name="html" type="String" />
       <return>
         <type name="htmlString"/>
-        <type name="Element"/>
-        <type name="Text"/>
+        <type name="TypeOrArray">
+          <typeArgument name="Element"/>
+          <typeArgument name="Text"/>
+        </type>
         <type name="jQuery"/>        
       </return>     
       <desc>A function that returns an HTML string, DOM element(s), text node(s), or jQuery object to insert at the beginning of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, <code>this</code> refers to the current element in the set.</desc>

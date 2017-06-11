@@ -1,72 +1,14 @@
 <?xml version="1.0"?>
 <entries>
   <desc>Store arbitrary data associated with the matched elements or return the value at the named data store for the first element in the set of matched elements.</desc>
-  <entry type="method" name="data" return="jQuery">
-    <title>.data()</title>
+  <entry type="method" name="data" return="Anything">
     <signature>
       <added>1.2.3</added>
       <argument name="key" type="String">
-        <desc>A string naming the piece of data to set.</desc>
+        <desc>Name of the data stored.</desc>
       </argument>
-      <argument name="value" type="Anything">
-        <desc>The new data value; this can be any Javascript type except <code>undefined</code>.</desc>
-      </argument>
+      <argument name="undefined" type="undefined"/>
     </signature>
-    <signature>
-      <added>1.4.3</added>
-      <argument name="obj" type="PlainObject">
-        <desc>An object of key-value pairs of data to update.</desc>
-      </argument>
-    </signature>
-    <desc>Store arbitrary data associated with the matched elements.</desc>
-    <longdesc>
-      <p>The <code>.data()</code> method allows us to attach data of any type to DOM elements in a way that is safe from circular references and therefore from memory leaks.</p>
-      <p>We can set several distinct values for a single element and retrieve them later:</p>
-      <pre><code>
-$( "body" ).data( "foo", 52 );
-$( "body" ).data( "bar", { myType: "test", count: 40 } );
-$( "body" ).data( { baz: [ 1, 2, 3 ] } );
-$( "body" ).data( "foo" ); // 52
-$( "body" ).data(); // { foo: 52, bar: { myType: "test", count: 40 }, baz: [ 1, 2, 3 ] }
-      </code></pre>
-      <p>In jQuery 1.4.3 setting an element's data object with <code>.data(obj)</code> extends the data previously stored with that element.</p>
-      <p>Prior to jQuery 1.4.3 (starting in jQuery 1.4) the <code>.data()</code> method completely replaced all data, instead of just extending the data object. If you are using third-party plugins it may not be advisable to completely replace the element's data object, since plugins may have also set data.</p>
-      <p><strong>jQuery 3</strong> changes the behavior of this method to align it to the <a href="http://www.w3.org/TR/html5/dom.html#dom-dataset">Dataset API specifications</a>. Specifically, jQuery 3 transforms every two-character sequence of "-" (U+002D) followed by a lowercase ASCII letter by the uppercase version of the letter as per definition of <a href="http://www.w3.org/TR/html5/dom.html#dom-dataset">the algorithm of the Dataset API</a>. Writing a statement like <code>$( "body" ).data( { "my-name": "aValue" } ).data();</code> will return <code>{ myName: "aValue" }</code>.</p>
-      <p>Due to the way browsers interact with plugins and external code, the <code>.data()</code> method cannot be used on <code>&lt;object&gt;</code> (unless it's a Flash plugin), <code>&lt;applet&gt;</code> or <code>&lt;embed&gt;</code> elements.</p>
-    </longdesc>
-    <note id="no-data-on-xml" type="additional"/>
-    <note id="data-doesnt-accept-undefined" type="additional" data-title=".data" data-parameters="&quot;name&quot;"/>
-    <example>
-      <desc>Store then retrieve a value from the div element.</desc>
-      <code><![CDATA[
-$( "div" ).data( "test", { first: 16, last: "pizza!" } );
-$( "span:first" ).text( $( "div" ).data( "test" ).first );
-$( "span:last" ).text( $( "div" ).data( "test" ).last );
-]]></code>
-      <css><![CDATA[
-  div {
-    color: blue;
-  }
-  span {
-    color: red;
-  }
-]]></css>
-      <html><![CDATA[
-<div>
-  The values stored were
-  <span></span>
-  and
-  <span></span>
-</div>
-]]></html>
-    </example>
-    <category slug="data"/>
-    <category slug="miscellaneous/data-storage"/>
-    <category slug="version/1.2.3"/>
-    <category slug="version/1.4"/>
-    <category slug="version/1.4.3"/>
-  </entry>
-  <entry type="method" name="data" return="Anything">
     <signature>
       <added>1.2.3</added>
       <argument name="key" type="String">
@@ -172,7 +114,72 @@ $( "button" ).click(function() {
     <category slug="miscellaneous/data-storage"/>
     <category slug="version/1.2.3"/>
   </entry>
-  <entry type="method" name="data" return="Object">
+  <entry type="method" name="data" return="jQuery">
+    <title>.data()</title>
+    <signature>
+      <added>1.2.3</added>
+      <argument name="key" type="String">
+        <desc>A string naming the piece of data to set.</desc>
+      </argument>
+      <argument name="value" type="Anything">
+        <desc>The new data value; this can be any Javascript type except <code>undefined</code>.</desc>
+      </argument>
+    </signature>
+    <signature>
+      <added>1.4.3</added>
+      <argument name="obj" type="PlainObject">
+        <desc>An object of key-value pairs of data to update.</desc>
+      </argument>
+    </signature>
+    <desc>Store arbitrary data associated with the matched elements.</desc>
+    <longdesc>
+      <p>The <code>.data()</code> method allows us to attach data of any type to DOM elements in a way that is safe from circular references and therefore from memory leaks.</p>
+      <p>We can set several distinct values for a single element and retrieve them later:</p>
+      <pre><code>
+$( "body" ).data( "foo", 52 );
+$( "body" ).data( "bar", { myType: "test", count: 40 } );
+$( "body" ).data( { baz: [ 1, 2, 3 ] } );
+$( "body" ).data( "foo" ); // 52
+$( "body" ).data(); // { foo: 52, bar: { myType: "test", count: 40 }, baz: [ 1, 2, 3 ] }
+      </code></pre>
+      <p>In jQuery 1.4.3 setting an element's data object with <code>.data(obj)</code> extends the data previously stored with that element.</p>
+      <p>Prior to jQuery 1.4.3 (starting in jQuery 1.4) the <code>.data()</code> method completely replaced all data, instead of just extending the data object. If you are using third-party plugins it may not be advisable to completely replace the element's data object, since plugins may have also set data.</p>
+      <p><strong>jQuery 3</strong> changes the behavior of this method to align it to the <a href="http://www.w3.org/TR/html5/dom.html#dom-dataset">Dataset API specifications</a>. Specifically, jQuery 3 transforms every two-character sequence of "-" (U+002D) followed by a lowercase ASCII letter by the uppercase version of the letter as per definition of <a href="http://www.w3.org/TR/html5/dom.html#dom-dataset">the algorithm of the Dataset API</a>. Writing a statement like <code>$( "body" ).data( { "my-name": "aValue" } ).data();</code> will return <code>{ myName: "aValue" }</code>.</p>
+      <p>Due to the way browsers interact with plugins and external code, the <code>.data()</code> method cannot be used on <code>&lt;object&gt;</code> (unless it's a Flash plugin), <code>&lt;applet&gt;</code> or <code>&lt;embed&gt;</code> elements.</p>
+    </longdesc>
+    <note id="no-data-on-xml" type="additional"/>
+    <note id="data-doesnt-accept-undefined" type="additional" data-title=".data" data-parameters="&quot;name&quot;"/>
+    <example>
+      <desc>Store then retrieve a value from the div element.</desc>
+      <code><![CDATA[
+$( "div" ).data( "test", { first: 16, last: "pizza!" } );
+$( "span:first" ).text( $( "div" ).data( "test" ).first );
+$( "span:last" ).text( $( "div" ).data( "test" ).last );
+]]></code>
+      <css><![CDATA[
+  div {
+    color: blue;
+  }
+  span {
+    color: red;
+  }
+]]></css>
+      <html><![CDATA[
+<div>
+  The values stored were
+  <span></span>
+  and
+  <span></span>
+</div>
+]]></html>
+    </example>
+    <category slug="data"/>
+    <category slug="miscellaneous/data-storage"/>
+    <category slug="version/1.2.3"/>
+    <category slug="version/1.4"/>
+    <category slug="version/1.4.3"/>
+  </entry>
+  <entry type="method" name="data" return="PlainObject">
     <signature>
       <added>1.4</added>
     </signature>

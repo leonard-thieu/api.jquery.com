@@ -4,7 +4,8 @@
   <signature>
     <added>1.0</added>
     <added>1.6</added>
-    <argument name="selector" type="Selector">
+    <argument name="selector">
+      <type name="Selector"/>
       <desc>A string containing a selector expression to match elements against.</desc>
       <type name="Function">
         <argument name="this" type="Element" />

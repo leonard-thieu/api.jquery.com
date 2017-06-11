@@ -6,8 +6,15 @@
     <argument name="callback" type="Function">
       <argument name="this" type="Element" />
       <argument name="index" type="Integer" />
-        <argument name="domElement" type="Element" />
-        <return type="Object" />
+      <argument name="domElement" type="Element" />
+      <return>
+        <type name="Anything"/>
+        <type name="Array">
+          <typeArgument name="Anything"/>
+        </type>
+        <type name="Null"/>
+        <type name="undefined"/>
+      </return>
       <desc>A function object that will be invoked for each element in the current set.</desc>
     </argument>
   </signature>

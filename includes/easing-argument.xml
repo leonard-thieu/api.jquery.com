@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
-<argument name="easing" type="String" default="swing" optional="true">
+<argument name="easing" default="swing" optional="true">
+	<type name="String"/>
 	<desc>A string indicating which easing function to use for the transition.</desc>
 </argument>

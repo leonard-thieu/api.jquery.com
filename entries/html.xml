@@ -69,7 +69,8 @@ $( "p" ).click(function() {
     <signature>
       <added>1.0</added>
       <added>1.4</added>
-      <argument name="htmlString" type="htmlString">
+      <argument name="htmlString">
+        <type name="htmlString"/>
         <desc>A string of HTML to set as the content of each matched element.</desc>
         <type name="Function">
           <argument name="this" type="Element" />

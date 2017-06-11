@@ -4,7 +4,7 @@
     <return intersect="true">
       <type name="TTarget"/>
       <type name="Promise">
-        <typeArgument name="T"/>
+        <typeArgument name="TContext"/>
       </type>
     </return>
     <title>deferred.promise()</title>
@@ -95,7 +95,7 @@ obj.done(function( name ) {
   <entry name="deferred.promise" type="method">
     <return>
       <type name="Promise">
-        <typeArgument name="T"/>
+        <typeArgument name="TContext"/>
       </type>
     </return>
     <title>deferred.promise()</title>

@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <entries>
   <desc>Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</desc>
-  <entry type="method" name="attr" return="String">
+  <entry type="method" name="attr">
+    <return>
+      <type name="String"/>
+      <type name="undefined"/>
+    </return>
     <title>.attr()</title>
     <signature>
       <added>1.0</added>
@@ -164,6 +168,8 @@ The title of the emphasis is:<div></div>
           <return>
             <type name="String"/>
             <type name="Number"/>
+            <type name="void"/>
+            <type name="undefined"/>
           </return>
         </type>
         <desc>A function returning the value to set. <code>this</code> is the current element. Receives the index position of the element in the set and the old attribute value as arguments.</desc>

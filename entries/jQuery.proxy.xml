@@ -20,7 +20,7 @@
   <signature>
     <added>1.4</added>
     <added>1.6</added>
-    <typeParameter name="T"/>
+    <typeParameter name="T extends object"/>
     <argument name="context">
       <typeArgument name="T"/>
       <desc>The object to which the context of the function should be set.</desc>

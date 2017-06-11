@@ -10,6 +10,7 @@
         <type name="String"/>
         <desc>One or more class names (separated by spaces) to be toggled for each element in the matched set.</desc>
         <type name="Function">
+          <argument name="this" type="Element" />
           <argument name="index" type="Integer" />
           <argument name="className" type="String" />
           <argument name="state" type="Boolean" />

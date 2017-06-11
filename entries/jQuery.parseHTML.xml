@@ -2,7 +2,7 @@
 <entry type="method" name="jQuery.parseHTML">
   <return>
     <type name="Array">
-      <typeArgument name="Node"/>
+      <typeArgument name="Element"/>
     </type>
   </return>
   <title>jQuery.parseHTML()</title>
@@ -12,10 +12,27 @@
     <argument name="data" type="String">
       <desc>HTML string to be parsed</desc>
     </argument>
-    <argument name="context" type="Element" optional="true" default="document">
+    <argument name="context" default="document">
+      <type name="Element"/>
+      <type name="Null"/>
+      <type name="undefined"/>
       <desc>Document element to serve as the context in which the HTML fragment will be created</desc>
     </argument>
-    <argument name="keepScripts" type="Boolean" optional="true" default="false">
+    <argument name="keepScripts" type="Boolean" default="false">
+      <desc>A Boolean indicating whether to include scripts passed in the HTML string</desc>
+    </argument>
+  </signature>
+  <signature>
+    <added>1.8</added>
+    <argument name="data" type="String">
+      <desc>HTML string to be parsed</desc>
+    </argument>
+    <argument name="context_keepScripts" optional="true">
+      <type name="Element"/>
+      <type name="Null"/>
+      <type name="undefined"/>
+      <desc>Document element to serve as the context in which the HTML fragment will be created</desc>
+      <type name="Boolean"/>
       <desc>A Boolean indicating whether to include scripts passed in the HTML string</desc>
     </argument>
   </signature>

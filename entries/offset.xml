@@ -85,6 +85,7 @@ $( "*", document.body ).click(function( event ) {
         <type name="Coordinates"/>
         <desc>An object containing the properties <code>top</code> and <code>left</code>, which are numbers indicating the new top and left coordinates for the elements.</desc>
         <type name="Function">
+          <argument name="this" type="HTMLElement" />
           <argument name="index" type="Integer" />
           <argument name="coords" type="Coordinates" />
           <return type="Coordinates" />

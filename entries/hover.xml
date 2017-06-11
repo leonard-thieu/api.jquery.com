@@ -14,7 +14,7 @@
       </return>
       <desc>A function to execute when the mouse pointer enters or leaves the element.</desc>
     </argument>
-    <argument name="handlerOut" type="Function">
+    <argument name="handlerOut" type="Function" optional="true">
       <argument name="this" type="Element" />
       <argument name="eventObject" type="Event" />
       <return>

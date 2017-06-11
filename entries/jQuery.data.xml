@@ -65,6 +65,16 @@ $( "span:last" ).text( jQuery.data( div, "test" ).last );
   <entry type="method" name="jQuery.data" return="Anything">
     <signature>
       <added>1.2.3</added>
+      <argument name="element" type="Element">
+        <desc>The DOM element to query for the data.</desc>
+      </argument>
+      <argument name="key" type="String">
+        <desc>Name of the data stored.</desc>
+      </argument>
+      <argument name="undefined" type="undefined"/>
+    </signature>
+    <signature>
+      <added>1.2.3</added>
       <added>1.4</added>
       <argument name="element" type="Element">
         <desc>The DOM element to query for the data.</desc>
@@ -72,7 +82,6 @@ $( "span:last" ).text( jQuery.data( div, "test" ).last );
       <argument name="key" type="String" optional="true">
         <desc>Name of the data stored.</desc>
       </argument>
-      <argument name="value" type="undefined" optional="true"/>
     </signature>
     <desc>Returns value at named data store for the element, as set by <code>jQuery.data(element, name, value)</code>, or the full data store for the element.</desc>
     <longdesc>

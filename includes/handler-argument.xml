@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<argument name="handler" optional="true">
+  <type name="EventHandler"/>
+  <desc>A function to execute each time the event is triggered.</desc>
+</argument>
